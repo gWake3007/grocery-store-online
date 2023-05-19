@@ -27,26 +27,26 @@ body {
   letter-spacing: -0.04em;
 }
 
-.container{
-    max-width:375px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 20px;
+.container {
+  min-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
 }
 
 /*=========  TABLET  =========*/
 @media screen and (min-width: 768px) {
-    .container{
-        max-width: 768px;
-        padding: 0 32px;
-    }
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
 }
 
 /*=========  DESKTOP  =========*/
 @media screen and (min-width: 1280px) {
-    .container{
-        max-width: 1280px;
-    }
+  .container {
+    max-width: 1280px;
+  }
 }
 
 /* BACKGROUND COLOR SECTION */

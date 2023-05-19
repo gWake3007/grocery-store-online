@@ -1,0 +1,81 @@
+.to-order-section {
+    background-color: var(--violet);
+}
+
+.to-order-container {
+    padding-bottom: 80px;
+}
+
+.to-order-title {
+    font-weight: 500;
+        font-size: 28px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-transform: uppercase;
+
+        margin-bottom: 14px;
+    
+        color: var(--white);
+        text-shadow: var(--shop-now);
+}
+
+.to-order-text {
+    display: flex;
+        align-items: center;
+        text-align: center;
+
+        margin-bottom: 44px;
+
+        color: var(--white);
+            text-shadow: var(--shop-now);
+}
+
+.to-order-list {
+    margin-bottom: 44px;
+}
+
+.to-order-list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 72px;
+
+    margin-bottom: 20px;
+    padding: 20px;
+
+    background: var(--white);
+    border-radius: 20px;
+}
+.to-order-list-item:last-child{
+    margin-bottom: 0;
+}
+
+.to-order-list-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 14px;
+
+    min-width: 136px;
+    height: 48px;
+
+    background: var(--violet);
+    border-radius: 200px;
+    color: var(--white);
+}
+.step-2{
+background: var(--light-grean);
+}
+.step-3{
+background: var(--yellow);
+}
+
+.to-order-gif{
+    margin: 0 auto;
+    height: 476px;
+
+    border-radius: 20px;
+}
