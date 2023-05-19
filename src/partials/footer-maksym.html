@@ -1,8 +1,12 @@
 <link rel="stylesheet" href="../css/footer-maksym.css" />
 <link rel="stylesheet" href="../css/reset.css" />
+<link rel="stylesheet" href="../css/base.css" />
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <footer class="footer">
   <div class="container">
-    <div>
+    <div class="footer-main-container">
       <img
         srcset="
           ../img/footer-maksym/girl-footer_@1x.jpg 1x,
@@ -11,21 +15,24 @@
         src="../img/footer-maksym/girl-footer_@1x.jpg"
         alt="girl with bananas"
       />
-      <div>
-        <svg width="16" height="16">
+      <div class="footer-title-container">
+        <svg class="footer-logo-icon" width="16" height="16">
           <use href="../img/icons.svg#icon-footer-logo"></use>
         </svg>
-        <h3>FRESH HARVEST BOX</h3>
+        <h3 class="footer-text">FRESH HARVEST BOX</h3>
       </div>
     </div>
     <nav>
-      <ul>
-        <li><a href="">How it works</a></li>
-        <li><a href="">Fruits</a></li>
-        <li><a href="">Contacts</a></li>
+      <!-- тут я поставил якоря они будут вести туда где будут секции соответствующие -> name="How-it-works" name="Fruits" name="Contacts" -->
+      <ul class="footer-nav-list footer-text">
+        <li>
+          <a class="footer-nav-text" href="#How-it-works">How it works</a>
+        </li>
+        <li><a href="#Fruits">Fruits</a></li>
+        <li><a href="#Contacts">Contacts</a></li>
       </ul>
     </nav>
-    <div>
+    <div class="footer-socials-container">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="footer-social-icons" href="">
@@ -50,19 +57,20 @@
         </li>
       </ul>
     </div>
-    <address>
-      <ul>
-        <li>
-          <a class="footer-number footer-text" href="tel:+380684439426"
+    <address class="footer-address-section">
+      <ul class="footer-address-list">
+        <li class="footer-number">
+          <a class="footer-address-text footer-text" href="tel:+380684439426"
             >+380 (68) 443-94-26</a
           >
         </li>
-        <li>
+        <li class="footer-geo">
           <a
-            class="footer-geo footer-text"
-            href="https://www.google.com/maps/search/?api=1&query=1678 S. Pioneer Road Salt Lake City UT 84104"
+            name="How-it-works"
+            class="footer-address-text footer-text"
+            href="https://www.google.com/maps/search/?api=1&query=1678-S.-Pioneer-Road-Salt-Lake-City-UT-84104"
             target="_blank"
-            >1678 S. Pioneer Road Salt Lake City UT 84104</a
+            >1678 S. Pioneer Road Salt Lake City UT &nbsp; 84104</a
           >
         </li>
       </ul>

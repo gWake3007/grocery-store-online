@@ -1,3 +1,6 @@
+
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
 <symbol id="icon-Vector" viewBox="0 0 32 32">
     <path fill="#fff" style="fill: var(--color1, #fff)"
         d="M31.949 4.659l-4.425-4.425v22.123l-22.123-22.123-3.319 3.319 22.123 22.123h-22.123l4.425 4.425h25.442v-25.442z">
@@ -24,3 +27,5 @@
 <path fill="#ae1332" style="fill: var(--color1, #ae1332)" d="M18.591 0.224h-4.009c-1.237 0-2.24 0.983-2.24 2.195v3.929c0 1.212 1.003 2.195 2.24 2.195h4.009c1.237 0 2.24-0.984 2.24-2.196v-3.929c0-1.212-1.003-2.195-2.24-2.195z"></path>
 <path fill="#ae1332" style="fill: var(--color1, #ae1332)" d="M30.044 11.926h-4.010c-1.237 0-2.24 0.983-2.24 2.195v3.929c0 1.212 1.003 2.195 2.24 2.195h4.009c1.237 0 2.24-0.983 2.24-2.195v-3.929c0-1.212-1.003-2.195-2.24-2.195z"></path>
 </symbol>
+</defs>
+</svg>
