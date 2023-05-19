@@ -27,5 +27,9 @@
 <path fill="#ae1332" style="fill: var(--color1, #ae1332)" d="M18.591 0.224h-4.009c-1.237 0-2.24 0.983-2.24 2.195v3.929c0 1.212 1.003 2.195 2.24 2.195h4.009c1.237 0 2.24-0.984 2.24-2.196v-3.929c0-1.212-1.003-2.195-2.24-2.195z"></path>
 <path fill="#ae1332" style="fill: var(--color1, #ae1332)" d="M30.044 11.926h-4.010c-1.237 0-2.24 0.983-2.24 2.195v3.929c0 1.212 1.003 2.195 2.24 2.195h4.009c1.237 0 2.24-0.983 2.24-2.195v-3.929c0-1.212-1.003-2.195-2.24-2.195z"></path>
 </symbol>
+  <symbol id="icon-x" viewBox="0 0 32 32">
+<path fill="none" stroke="#ae1332" style="stroke: var(--color1, #ae1332)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16"></path>
+<path fill="none" stroke="#ae1332" style="stroke: var(--color1, #ae1332)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M8 8l16 16"></path>
+</symbol>
 </defs>
 </svg>
