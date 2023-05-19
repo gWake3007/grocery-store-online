@@ -1,0 +1,139 @@
+.section-container {
+}
+.container {
+}
+.organic-container {
+  box-sizing: border-box;
+  outline: #000000 solid 1px;
+  background-color: var(--violet);
+}
+.organic--title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+
+  align-items: center;
+  text-align: center;
+
+  color: var(--white);
+
+  text-shadow: var(--shop-now);
+
+  margin-bottom: 14px;
+}
+.organic-text {
+  max-width: 334px;
+  margin: 0 auto;
+
+  text-align: center;
+  letter-spacing: -0.04em;
+
+  color: var(--white);
+
+  text-shadow: var(--shop-now);
+}
+
+.organic-list-card {
+  margin-bottom: 44px;
+}
+.organic-list-card .card:last-child {
+  margin-bottom: 44px;
+  background: #98b37e;
+}
+.organic-list-card .card:first-child {
+  background-color: #f8766b;
+}
+
+.organic-list-card .card:nth-last-child(8) {
+  background: #edd251;
+}
+.organic-list-card .card:nth-last-child(7) {
+  background: #9dc262;
+}
+.organic-list-card .card:nth-last-child(6) {
+  background: #bfd663;
+}
+.organic-list-card .card:nth-last-child(5) {
+  background: #e93f29;
+}
+.organic-list-card .card:nth-last-child(4) {
+  background: #db4f4b;
+}
+.organic-list-card .card:nth-last-child(3) {
+  background: #9b5366;
+}
+.organic-list-card .card:nth-last-child(2) {
+  background: #f47f4c;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* display: block; */
+  max-width: 335px;
+  min-height: 465px;
+
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.shadow {
+  position: absolute;
+
+  width: 195px;
+  height: 38px;
+  left: 70px;
+  top: 355px;
+
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+  filter: blur(13.5914px);
+  border-radius: 50%;
+}
+.name-card {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  color: var(--white);
+
+  /* margin-top: 64px; */
+  margin-bottom: 8px;
+  margin-left: 24px;
+}
+.name-text {
+  letter-spacing: -0.02em;
+
+  color: var(--white);
+  margin-bottom: 4px;
+  margin-left: 24px;
+}
+.img-card {
+  margin: 0 auto;
+  /* margin-bottom: 26px; */
+}
+.link-card {
+  display: block;
+  max-width: 73px;
+  word-wrap: normal;
+  font-weight: 500;
+
+  color: var(--violet);
+
+  padding: 12px 24px;
+  margin-left: 24px;
+  margin-bottom: 26px;
+
+  background-color: var(--white);
+  border-radius: 200px;
+}
+
+.section-button {
+}
+.button {
+}
+.svg-card {
+}
+.svg-icon {
+}
