@@ -48,3 +48,8 @@ body {
         max-width: 1280px;
     }
 }
+
+/* BACKGROUND COLOR SECTION */
+.background{
+    background-color: var(--violet);
+}
