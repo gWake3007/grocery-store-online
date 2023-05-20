@@ -1,3 +1,5 @@
+/* Contacts section styles */
+
 .contacts-section {
   padding-bottom: 80px;
   background-color: var(--violet);
@@ -18,6 +20,7 @@
 .contacts-section .container {
   position: relative;
   padding-top: 53px;
+  outline: red solid 1px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
@@ -38,10 +41,9 @@
   font-weight: 500;
   line-height: 1;
   text-align: center;
-  letter-spacing: -0.04em;
   color: var(--white);
   text-transform: uppercase;
-  text-shadow: 0 4px rgba(0, 0, 0, 0.1);
+  text-shadow: var(--shop-now);
 }
 
 @media only screen and (max-width: 767px) {
@@ -71,6 +73,7 @@
     font-size: 64px;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .contacts-section-list {
     display: flex;
@@ -85,9 +88,16 @@
   }
 }
 
-.contacts-section-item {
-  border: transparent;
-  border-radius: 20px;
+@media only screen and (max-width: 767px) {
+  .contacts-section-item {
+    max-width: 335px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contacts-section-item {
+    flex: auto;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -101,11 +111,9 @@
   margin-right: auto;
   margin-bottom: 80px;
   margin-left: auto;
-  line-height: 1.29;
   text-align: center;
-  letter-spacing: -0.04em;
   color: var(--white);
-  text-shadow: 0 4px rgba(0, 0, 0, 0.1);
+  text-shadow: var(--shop-now);
 }
 
 @media only screen and (max-width: 767px) {
@@ -114,16 +122,16 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .feedback-form {
+    display: none;
+  }
+}
+
 .feedback-form-wrapper {
   position: relative;
   width: 292px;
   margin: 0 auto;
-}
-
-@media only screen and (max-width: 767px) {
-  .feedback-form-wrapper {
-    display: none;
-  }
 }
 
 .contacts-form-input {
@@ -151,7 +159,8 @@
 }
 
 .contacts-form-input:invalid {
-  border-color: red;
+  border-color: transparent;
+  outline: red solid 2px;
 }
 
 .feedback-send-btn {
