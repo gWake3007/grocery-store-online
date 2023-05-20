@@ -114,16 +114,16 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .feedback-form {
+    display: none;
+  }
+}
+
 .feedback-form-wrapper {
   position: relative;
   width: 292px;
   margin: 0 auto;
-}
-
-@media only screen and (max-width: 767px) {
-  .feedback-form-wrapper {
-    display: none;
-  }
 }
 
 .contacts-form-input {
@@ -151,7 +151,8 @@
 }
 
 .contacts-form-input:invalid {
-  border-color: red;
+  border-color: transparent;
+  outline: red solid 2px;
 }
 
 .feedback-send-btn {
