@@ -9,11 +9,11 @@
   background-color: rgba(46, 47, 66, 0.4); 
 }
 
-  .is-hidden{
+  /* .is-hidden{
     visibility: hidden;
     pointer-events: none;
     opacity: 0;
-  }
+  } */
 
 .modal-thank{
     position: absolute;
@@ -30,9 +30,10 @@
   text-align: center;
   border-radius: 20px;
 
-  color: #FFFFFF;
-  background-color: #E03F5E;
+  color: var(--white);
+  background-color: var(--violet);
 }
+
 .thank-close{
 position: absolute;
 top: 20px;
@@ -40,12 +41,12 @@ right: 20px;
 
 cursor: pointer;
 
-background-color: #E03F5E;
+background-color: var(--violet);
 border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .thank-close-icon{
-fill: #FFFFFF;
+fill: var(--white);
 }
 
 .thank-title{
