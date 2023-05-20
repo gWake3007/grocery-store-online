@@ -257,10 +257,11 @@
     height: 114px;
   }
 }
-
 .svg-card {
   margin-right: 4px;
 }
 
 .svg-icon {
+  font-size: 18px;
+  line-height: 1.33;
 }
