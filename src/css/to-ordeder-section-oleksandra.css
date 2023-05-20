@@ -1,10 +1,10 @@
 .to-order-section {
-    background-color: var(--violet);
-}
-
-.to-order-container {
     padding-bottom: 80px;
 }
+.to-order-container{
+    max-width: 335px;
+}
+
 
 .to-order-title {
     font-weight: 500;
@@ -41,7 +41,7 @@
     flex-direction: row;
     align-items: center;
 
-    height: 72px;
+    height: 112px;
 
     margin-bottom: 20px;
     padding: 20px;
@@ -65,6 +65,9 @@
     background: var(--violet);
     border-radius: 200px;
     color: var(--white);
+
+    font-size: 18px;
+        line-height: 1.33;
 }
 .step-2{
 background: var(--light-grean);
@@ -78,4 +81,79 @@ background: var(--yellow);
     height: 476px;
 
     border-radius: 20px;
+}
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    .to-order-section{
+        padding-bottom: 144px;
+    }
+    .to-order-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 704px;
+    }
+.to-order-list{
+    max-width: 389px;
+
+    margin-bottom: 80px;
+}
+.to-order-list-item{
+    height: 128px;
+
+    margin-bottom: 24px;
+    padding: 40px 20px;
+}
+.to-order-gif{
+width: 704px;
+height: 476px;
+}
+}
+@media screen and (min-width: 768px){
+    .to-order-title{
+        font-size: 40px;
+        line-height: 44px;
+
+        max-width: 624px;
+}  
+    .to-order-text{
+        max-width: 509px;
+}
+}
+@media screen and (min-width: 1280px){
+    .to-order-section {
+            padding-bottom: 150px;
+        }
+    .to-order-container{
+        max-width: 1147px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .to-order-title {
+            font-size: 40px;
+            line-height: 44px;
+    
+            max-width: 624px;
+        }
+        .to-order-list {
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+    
+            margin-bottom: 80px;
+        }
+        .to-order-list-item {
+            width: 389px;
+            height: 128px;
+
+            padding: 40px 20px;
+        }
+        .to-order-gif {
+            width: 860px;
+            height: 476px;
+        }
 }
