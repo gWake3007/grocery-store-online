@@ -1,0 +1,32 @@
+.header {
+    background-color: white;
+    color: #AE1332;
+}
+
+.nav {}
+
+.list {
+    list-style: none;
+}
+
+.nav-list {
+    text-transform: capitalize;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.nav-link {}
+
+.logo-link {}
+
+.logo-icon {}
+
+.logo-text {
+    text-transform: uppercase;
+}
+
+.basket-button {}
+
+.basket-icon {}
