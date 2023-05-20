@@ -1,0 +1,322 @@
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  1.5%,
+  4.5%,
+  7.5% {
+    transform: translateX(5px);
+  }
+  3%,
+  6%,
+  9% {
+    transform: translateX(-5px);
+  }
+  10% {
+    transform: translateX(0);
+  }
+}
+
+.hero-section > .container {
+  position: relative;
+  z-index: -1;
+  box-sizing: border-box;
+
+  padding-top: 62px;
+  padding-bottom: 80px;
+
+  color: var(--white);
+  background-color: var(--violet);
+}
+
+
+.hero-title {
+  
+  position: relative;
+  z-index: 10;
+
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+
+  text-transform: uppercase; 
+  text-shadow: var(--shop-now);
+}
+
+/**
+  |============================
+  | Hero main
+  |============================
+*/
+
+.banana {
+  position: absolute;
+  top: 120px;
+  left: 8.05px;
+  z-index: 3;
+  width: 75px;
+  height: 53px;
+  transform: rotate(20deg);
+
+  background-image: url(../img/hero/banana_mobile@1x.png);
+}
+
+.strawberry {
+
+  position: absolute;
+  top: 59px;
+  left: 301px;
+  z-index: 3;
+
+  width: 56px;
+  height: 56px;
+
+  background-image: url(../img/hero/strawberry_mobile@1x.png);
+}
+
+
+.hero-main {
+    position: relative;
+    top:-70px;     
+    left: 0;
+    box-sizing: border-box;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    max-width: 335px;
+    height: 509px;   
+    border-radius: 500px;  
+
+    background-color: var(--violet);
+}
+
+.hero-main:before {
+
+  box-sizing: border-box;
+  content:"";
+  position: absolute;
+
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  z-index: -1;
+  border-radius: 500px;
+  border: 1px solid transaprent;
+  background: linear-gradient(359.94deg, #FFFFFF -1.7%, rgba(255, 255, 255, 0.441769) 30.64%, rgba(255, 255, 255, 0) 76.92%);
+}
+
+.hero-main-image {
+
+    box-sizing: border-box;
+    max-width: 311px;
+    height: 484px;
+    border-radius: 500px;
+
+     overflow: hidden;
+
+    background-image: url(../img/hero/redhair_girl_m@1x.jpg);
+    background-size:content;
+    background-repeat: no-repeat;
+    
+}
+
+
+/* hero button  */
+.hero-btn {
+  position: absolute;
+  top: 456px;
+  left: 127px;
+
+  min-width: 80px;
+  min-height: 80px;
+  margin-bottom: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 50%;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-family: inherit;
+
+  color: var(--violet);
+  background-color: var(--white);
+
+  transition: color 250ms var(--cubic);
+  animation: horizontal-shaking 6s infinite;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+
+  color: var(--light-grean);
+}
+
+.hero-btn-wrapper {
+  transform: rotate(-14deg);
+
+  text-shadow: var(--shop-now);
+}
+
+.hero-text {
+  max-width: 279px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 44px;
+
+  text-shadow: var(--shop-now);
+}
+
+/**
+  |============================
+  | Cards
+  |============================
+*/
+
+/* card container */
+
+.card-wrapper {
+    position: relative;
+  box-sizing: border-box;
+
+  border-radius: 500px;
+  max-width: 249px;
+  max-height: 387px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card-wrapper-watermelon {
+  padding-top: 28px;
+  padding-bottom: 40px;
+  margin-bottom: 44px;
+
+  background-color: var(--light-grean);
+}
+
+.card-wrapper-strawberry {
+  
+
+  padding-top: 28px;
+  padding-bottom: 40px;
+ 
+
+  background-color: var(--yellow);
+}
+ /* oval shadow */
+
+ .oval {
+
+    position: absolute;
+    top: 228px;
+    left: 4px;
+    width: 239px;
+    height: 38px;
+    border-radius: 50%;
+    opacity: 0.1;
+    filter: blur(13.5914px);
+
+    background-color: #000;
+    
+}
+
+/* card info */
+.hero-card-title {
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+
+  text-shadow: var(--shop-now);
+}
+
+.hero-card-text {
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+
+  text-shadow: var(--shop-now);
+}
+
+.watermelon-text {
+  max-width: 155px;
+}
+
+.strawberry-text {
+  max-width: 163px;
+}
+
+.title-watermelon {
+  margin-bottom: 61px;
+}
+
+.title-strawberry {
+  margin-bottom: 19px;
+}
+
+.card-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.watermelon-img {
+  margin-bottom: 2px;
+}
+
+.strawberry-img {
+  margin-bottom: 17px;
+}
+
+/**
+  |============================
+  | Hero LIST
+  |============================
+*/
+.hero-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 44px;
+}
+
+.hero-item {
+  display: block;
+  border: 1px solid var(--white);
+  border-radius: 1000px;
+}
+.hero-item:nth-child(even) {
+  width: 132px;
+}
+.hero-item:nth-child(odd) {
+  width: 125px;
+}
+
+.hero-list-link {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  text-align: center;
+}
+
+.hero-list-title {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  text-shadow: var(--shop-now);
+}
+
+
+
+
