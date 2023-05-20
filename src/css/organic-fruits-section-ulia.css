@@ -1,10 +1,8 @@
 .section-container {
   padding-bottom: 80px;
-  background-color: var(--violet);
   outline: #000000 solid 1px;
 }
 .container {
-  outline: #000000 solid 1px;
 }
 .organic-container {
   /* box-sizing: border-box; */
@@ -37,14 +35,9 @@
 
 .organic-list-card {
   display: flex;
-<<<<<<< Updated upstream
   flex-direction: column;
   gap: 14px;
   margin-bottom: 44px;
-=======
-  flex-wrap: wrap;
-  row-gap: 14px;
->>>>>>> Stashed changes
 }
 .organic-list-card .card:last-child {
   margin-bottom: 44px;
@@ -77,11 +70,6 @@
   background: #f47f4c;
 }
 
-<<<<<<< Updated upstream
-/* Mobile style  */
-
-=======
->>>>>>> Stashed changes
 @media only screen and (max-width: 767px) {
   .organic-list-card .card:nth-last-child(1) {
     display: none;
@@ -93,14 +81,7 @@
     display: none;
   }
 }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 .card {
-  /* max-width: 335px;
-  min-height: 465px; */
-
   padding-top: 64px;
   padding-bottom: 24px;
 
