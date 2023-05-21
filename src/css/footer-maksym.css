@@ -7,7 +7,8 @@
 
 @media only screen and (min-width: 1280px) {
   .footer {
-    margin-bottom: 35px;
+    padding: 0 0 35px 0;
+    background-color: var(--violet);
   }
 }
 
@@ -20,6 +21,13 @@
 .footer-main-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-main-container {
+    background-color: #ffffff;
+    padding: 80px 32px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
