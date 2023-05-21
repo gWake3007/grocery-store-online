@@ -15,6 +15,12 @@
     pointer-events: none;
 }
 
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+
 .modal {
     position: absolute;
     width: 335px;
