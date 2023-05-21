@@ -1,12 +1,11 @@
 .section-container {
   padding-bottom: 80px;
-  outline: #000000 solid 1px;
 }
 .container {
 }
 .organic-container {
 }
-.organic--title {
+.organic-title {
   font-weight: 500;
   font-size: 28px;
   line-height: 1;
@@ -24,7 +23,7 @@
 
 /* Tablet  */
 @media only screen and (min-width: 768px) {
-  .organic--title {
+  .organic-title {
     font-size: 40px;
     line-height: 1.1;
   }
@@ -57,7 +56,6 @@
 }
 
 .organic-list-card .card:nth-last-child(9) {
-  /* margin-top: 44px; */
   background-color: #f8766b;
 }
 .organic-list-card .card:nth-last-child(8) {
@@ -106,9 +104,6 @@
   .organic-list-card .card:nth-last-child(1) {
     display: none;
   }
-  /* .organic-list-card .card:nth-last-child(8) {
-    margin-top: 44px;
-  } */
 }
 
 /* Decktop  */
