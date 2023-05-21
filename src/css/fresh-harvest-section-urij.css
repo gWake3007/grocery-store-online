@@ -2,7 +2,6 @@
 
 .contacts-section {
   padding-bottom: 80px;
-  background-color: var(--violet);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
@@ -20,7 +19,6 @@
 .contacts-section .container {
   position: relative;
   padding-top: 53px;
-  outline: red solid 1px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
@@ -50,6 +48,12 @@
   .contacts-title {
     max-width: 335px;
     font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .contacts-title {
+    width: calc(100% - 40px);
   }
 }
 
@@ -94,9 +98,9 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts-section-item {
-    flex: auto;
+    flex-basis: calc((100% - 16px) / 2);
   }
 }
 
