@@ -81,7 +81,7 @@
   transform: rotate(20deg);
   background-size: cover;
 
-  background-image: url(../img/hero/banana_mobile@1x.png);
+  background-image: url(./img/hero/banana_mobile@1x.png);
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -89,7 +89,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .banana {
-    background-image: url(../img/hero/banana_mobile@2x.png);
+    background-image: url(./img/hero/banana_mobile@2x.png);
   }
 }
 
@@ -109,7 +109,7 @@
     height: 90px;
 
     transform: rotate(0);
-    background-image: url(../img/hero/banana_tablet@1x.png);
+    background-image: url(./img/hero/banana_tablet@1x.png);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -117,7 +117,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .banana {
-      background-image: url(../img/hero/banana_tablet@2x.png);
+      background-image: url(./img/hero/banana_tablet@2x.png);
     }
   }
 }
@@ -128,14 +128,14 @@
     left: 194px;
     width: 183.21px;
     height: 124.61px;
-    background-image: url(../img/hero/banana_desktop@1x.png);
+    background-image: url(./img/hero/banana_desktop@1x.png);
   }
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .banana {
-      background-image: url(../img/hero/banana_desktop@2x.png);
+      background-image: url(./img/hero/banana_desktop@2x.png);
     }
   }
 }
@@ -152,7 +152,7 @@
   width: 56px;
   height: 56px;
 
-  background-image: url(../img/hero/strawberry_mobile@1x.png);
+  background-image: url(./img/hero/strawberry_mobile@1x.png);
   background-size: cover;
 }
 
@@ -161,7 +161,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .strawberry {
-    background-image: url(../img/hero/strawberry_mobile@2x.png);
+    background-image: url(./img/hero/strawberry_mobile@2x.png);
   }
 }
 
@@ -179,7 +179,7 @@
 
     width: 108px;
     height: 108px;
-    background-image: url(../img/hero/strawberry_tablet@1x.png);
+    background-image: url(./img/hero/strawberry_tablet@1x.png);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -187,7 +187,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .strawberry {
-      background-image: url(../img/hero/strawberry_tablet@2x.png);
+      background-image: url(./img/hero/strawberry_tablet@2x.png);
     }
   }
 }
@@ -202,7 +202,7 @@
     height: 120px;
 
   
-    background-image: url(../img/hero/strawberry_desktop@1x.png);
+    background-image: url(./img/hero/strawberry_desktop@1x.png);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -210,7 +210,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .strawberry {
-      background-image: url(../img/hero/strawberry_desktop@2x.png);
+      background-image: url(./img/hero/strawberry_desktop@2x.png);
     }
   }
 }
@@ -292,7 +292,7 @@
 
   overflow: hidden;
 
-  background-image: url(../img/hero/redhair_girl_m@1x.jpg);
+  background-image: url(./img/hero/redhair_girl_m@1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -302,7 +302,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-main-image {
-    background-image: url(../img/hero/redhair_girl_m@2x.jpg);
+    background-image: url(./img/hero/redhair_girl_m@2x.jpg);
   }
 }
 
@@ -310,7 +310,7 @@
   .hero-main-image {
     max-width: 452px;
     height: 708px;
-    background-image: url(../img/hero/redhair_girl@1x.jpg);
+    background-image: url(./img/hero/redhair_girl@1x.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -318,7 +318,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-main-image {
-      background-image: url(../img/hero/redhair_girl@2x.jpg);
+      background-image: url(./img/hero/redhair_girl@2x.jpg);
     }
   }
 }
