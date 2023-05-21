@@ -5,13 +5,6 @@
   background-color: #ffffff;
 }
 
-@media only screen and (min-width: 1280px) {
-  .footer {
-    padding: 0 0 35px 0;
-    background-color: var(--violet);
-  }
-}
-
 .footer-text {
   color: var(--violet);
 }
@@ -21,13 +14,7 @@
 .footer-main-container {
   display: flex;
   flex-wrap: wrap;
-}
-
-@media only screen and (min-width: 1280px) {
-  .footer-main-container {
-    background-color: #ffffff;
-    padding: 80px 32px;
-  }
+  background-color: #ffffff;
 }
 
 @media only screen and (max-width: 767px) {
