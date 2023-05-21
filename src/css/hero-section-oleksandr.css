@@ -75,7 +75,7 @@
   position: absolute;
   top: 81px;
   left: 12px;
-  z-index: 3;
+  z-index: 100;
   width: 75px;
   height: 53px;
   transform: rotate(20deg);
