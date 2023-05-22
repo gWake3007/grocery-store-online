@@ -33,6 +33,15 @@
 .modal  {
     width: 704px;
     padding: 40px;
+    background-image: url(../img/modal-your-order-viktoriia/tablet/girl@1x.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+}
+@media only screen and (min-width: 1280px) {
+.modal   {
+    width: 891px;
+    background-image: url(../img/modal-your-order-viktoriia/desktop/girl@1x.png);
   }
 }
 .backdrop.is-hidden.modal {
@@ -99,6 +108,12 @@
 @media only screen and (min-width: 768px) {
 .modal-list   {
     display: flex;
+    gap: 12px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+.modal-list   {
+    gap: 20px;
   }
 }
 .modal-products {
@@ -109,6 +124,21 @@
     margin-bottom: 12px;
 }
 
+@media only screen and (min-width: 768px) {
+.modal-products   {
+    padding: 14px;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+.modal-products  {
+    width: 257px;
+    height: 308px;
+  }
+}
 .modal-strawberry {
     background: #F8766B;
 }
@@ -123,6 +153,7 @@
 .modal-products-label {
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .modal-text-wrap {
@@ -136,7 +167,12 @@
     letter-spacing: -0.04em;
     color: #FFFFFF;
 }
-
+@media only screen and (min-width: 1280px) {
+.modal-products-uppertitle  {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
 .modal-products-undertitle {
     font-size: 14px;
     line-height: 1.29;
@@ -148,6 +184,8 @@
     display: flex;
     gap: 2px;
 }
+
+
 
 .modal-img::after {
     display: block;
@@ -184,6 +222,11 @@
     margin-bottom: 14px;
 }
 
+@media only screen and (min-width: 768px) {
+.modal-form-names  {
+    width: 360px;
+  }
+}
 .modal-form-input {
     width: 100%;
     opacity: 0.3;
@@ -211,6 +254,12 @@
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media only screen and (min-width: 768px) {
+.modal-form-comments  {
+    width: 360px;
+    height: 145px;
+  }
+}
 .modal-form-comments:focus {
     border: 1px solid #9DC262;
     outline: none;
@@ -231,7 +280,15 @@
     border-radius: 100px;
 }
 
+@media only screen and (min-width: 1280px) {
+.modal-form-btn  {
+    padding: 15px 35px;
+    width: 114px;
+    height: 48px;
+  }
+}
 .modal-form-btn:hover,
 .modal-form-btn:focus {
     background-color: #506432;
 }
+

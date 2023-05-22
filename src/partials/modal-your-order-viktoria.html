@@ -26,22 +26,16 @@
                             <p class="modal-products-undertitle">Plant</p>   
                         </div>
                         <div class="modal-img">
-                         <img 
-                            srcset="
-                            ./images/team/img1-370.jpg 370w,
-                            ./images/team/img1-418.jpg 418w,
-                            ./images/team/img1-450.jpg 450w,
-                            ./images/team/img1-740.jpg 740w,
-                            ./images/team/img1-836.jpg 836w,
-                            ./images/team/img1-900.jpg 900w
-                            "
-                            sizes="(min-width: 1200px) 370px, (min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
-
-                            srcset="../img/modal-your-order-viktoriia/strawberry@1x.png 1x, ../img/modal-your-order-viktoriia/strawberry@2x.png 2x"
-                            src="../img/modal-your-order-viktoriia/strawberry@1x.png" 
-                            alt="Strawberry Basket"
-                            width="88"
-                            height="95">   
+                            <picture>
+                                <source media="(min-width: 1280px)" srcset="../img/modal-your-order-viktoriia/desktop/strawberry@1x.png 1x, ../img/modal-your-order-viktoriia/desktop/strawberry@2x.png 2x"
+                                    type="image/png">
+                                <source media="(min-width: 768px)" srcset="../img/modal-your-order-viktoriia/tablet/strawberry@1x.png 1x, ../img/modal-your-order-viktoriia/tablet/strawberry@2x.png 2x"
+                                    type="image/png">
+                                <source media="(max-width: 767px)" srcset="../img/modal-your-order-viktoriia/mobile/strawberry@1x.png 1x,  ../img/modal-your-order-viktoriia/mobile/strawberry@2x.png 2x"
+                                    type="image/png">
+                                <img src="../img/modal-your-order-viktoriia/mobile/strawberry@1x.png" alt="Strawberry Basket"
+                                    loading="lazy">
+                            </picture> 
                         </div>
                     </label>
                     <input 
@@ -50,8 +44,6 @@
                         class="modal-form-checkbox visually-hiden" 
                         name="strawberry_basket"
                         value="privacy_policy">
-                        
-                       
                 </li>
 
                 <li class="modal-products modal-apple">
@@ -63,12 +55,19 @@
                             <p class="modal-products-undertitle">Plant</p>   
                         </div>
                         <div class="modal-img">
-                            <img
-                            srcset="../img/modal-your-order-viktoriia/box@1x.png 1x, ../img/modal-your-order-viktoriia/box@2x.png 2x"
-                            src="../img/modal-your-order-viktoriia/box@1x.png" 
-                            alt="Apple Basket" 
-                            width="88" 
-                            height="95">
+                            <picture>
+                                <source media="(min-width: 1280px)"
+                                    srcset="../img/modal-your-order-viktoriia/desktop/box@1x.png 1x, ../img/modal-your-order-viktoriia/desktop/box@2x.png 2x"
+                                    type="image/png">
+                                <source media="(min-width: 768px)"
+                                    srcset="../img/modal-your-order-viktoriia/tablet/box@1x.png 1x, ../img/modal-your-order-viktoriia/tablet/box@2x.png 2x"
+                                    type="image/png">
+                                <source media="(max-width: 767px)"
+                                    srcset="../img/modal-your-order-viktoriia/mobile/box@1x.png 1x,  ../img/modal-your-order-viktoriia/mobile/box@2x.png 2x"
+                                    type="image/png">
+                                <img src="../img/modal-your-order-viktoriia/mobile/box@1x.png" alt="Apple Basket"
+                                    loading="lazy">
+                            </picture>
                         </div>
                     </label>
                         <input 
@@ -86,14 +85,20 @@
                             <p class="modal-products-undertitle">Plant</p>   
                         </div>
                         <div class="modal-img">
-                          <img 
-                            srcset="../img/modal-your-order-viktoriia/fruits@1x.png 1x, ../img/modal-your-order-viktoriia/fruits@2x.png 2x"
-                            src="../img/modal-your-order-viktoriia/fruits@1x.png" 
-                            alt="Fruits Basket" 
-                            width="88" 
-                            height="95">  
-                        </div>
-                        
+                            <picture>
+                                <source media="(min-width: 1280px)"
+                                    srcset="../img/modal-your-order-viktoriia/desktop/fruits@1x.png 1x, ../img/modal-your-order-viktoriia/desktop/fruits@2x.png 2x"
+                                    type="image/png">
+                                <source media="(min-width: 768px)"
+                                    srcset="../img/modal-your-order-viktoriia/tablet/fruits@1x.png 1x, ../img/modal-your-order-viktoriia/tablet/fruits@2x.png 2x"
+                                    type="image/png">
+                                <source media="(max-width: 767px)"
+                                    srcset="../img/modal-your-order-viktoriia/mobile/fruits@1x.png 1x,  ../img/modal-your-order-viktoriia/mobile/fruits@2x.png 2x"
+                                    type="image/png">
+                                <img src="../img/modal-your-order-viktoriia/mobile/fruits@1x.png" alt="Fruits Basket"
+                                    loading="lazy">
+                            </picture>
+                        </div>            
                         <input 
                             type="checkbox" 
                             id="fruits-check" 
