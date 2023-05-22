@@ -1,4 +1,4 @@
-.menu-container.is-open{
+.menu-container{
     position: fixed;
     top: 0;
     left: 0;
@@ -9,19 +9,21 @@
     height: 100vh;
     text-align: center;
     padding-top: 124px;
-   
+    overflow-y: scroll;
+    overflow-x: hidden;
     padding-bottom: 40px;
     background-color: var(--violet);
-    z-index: 999;
+    z-index: 1;
   
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+ 
   }
   
   /* .menu-container.is-open {
     transform: translateX(0);
-  }
-   */
+       transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  } */
+  
   .mobile-menu-btn {
     position: absolute;
     top: 24px;
