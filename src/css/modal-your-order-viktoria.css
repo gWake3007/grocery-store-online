@@ -126,6 +126,7 @@
 
 @media only screen and (min-width: 768px) {
 .modal-products   {
+    position: relative;
     padding: 14px;
     width: 200px;
     height: 250px;
@@ -154,12 +155,19 @@
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .modal-text-wrap {
     margin-right: auto;
 }   
 
+@media only screen and (min-width: 768px) {
+.modal-text-wrap  {
+    margin-top: 40px;
+    margin-bottom: 4px;
+  }
+}
 .modal-products-uppertitle {
     font-weight: 700;
     font-size: 18px;
@@ -167,6 +175,12 @@
     letter-spacing: -0.04em;
     color: #FFFFFF;
 }
+@media only screen and (min-width: 768px) {
+.modal-products-uppertitle   {
+    margin-bottom: 2px;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
 .modal-products-uppertitle  {
     font-size: 24px;
@@ -185,8 +199,59 @@
     gap: 2px;
 }
 
-
-
+@media only screen and (min-width: 768px) {
+.modal-image   {
+    bottom: 0;
+  }
+}
+.image-strawberry {
+    width: 88px;
+    height: 95px;
+}
+@media only screen and (min-width: 768px) {
+.image-strawberry  {
+    width: 133px;
+    height: 148px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+    .image-strawberry {
+        width: 173px;
+        height: 196px;
+    }
+}
+.image-apple {
+    width: 106px;
+    height: 95px;
+}
+@media only screen and (min-width: 768px) {
+    .image-apple {
+        width: 172px;
+        height: 148px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .image-apple {
+        width: 229px;
+        height: 196px;
+    }
+}
+.image-fruits {
+    width: 107px;
+    height: 95px;
+}
+@media only screen and (min-width: 768px) {
+    .image-fruits {
+        width: 172px;
+        height: 148px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .image-fruits {
+        width: 229px;
+        height: 196px;
+    }
+}
 .modal-img::after {
     display: block;
     border: 1.5px solid #FFFFFF;
@@ -197,6 +262,17 @@
     content: " ";
     flex-shrink: 0;
 }
+
+@media only screen and (min-width: 768px) {
+.modal-img::after   {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    right: 14px;
+  }
+}
+
 .visually-hiden {
     position: absolute;
     width: 0px;
