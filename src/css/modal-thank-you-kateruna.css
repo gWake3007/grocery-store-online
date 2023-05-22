@@ -64,34 +64,34 @@ text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 334px) {
-  .modal {
+  .modal-thank {
     width: 90%;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
-  .modal {
+  .modal-thank {
     max-height: 90vh;
     overflow-y: scroll;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .modal {
+  .modal-thank {
     width: 600px;
     padding: 70px 105px 80px 105px;
   }
 }
 
 @media (max-width: 335px) {
-  .modal-imG {
+  .thank-img {
     width: 207px; 
     height: auto; 
   }
 }
 
 @media (min-width: 768px) {
-  .modal-img {
+  .thank-img {
     width: 270px; 
     height: auto; 
   }
