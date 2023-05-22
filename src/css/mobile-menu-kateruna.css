@@ -18,11 +18,11 @@
  
   }
   
-  /* .menu-container.is-open {
+  .menu-container.is-open {
     transform: translateX(0);
        transform: translateX(100%);
     transition: transform 250ms ease-in-out;
-  } */
+  }
   
   .mobile-menu-btn {
     position: absolute;
