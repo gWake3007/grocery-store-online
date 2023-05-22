@@ -1,9 +1,6 @@
 .to-order-section {
     padding-bottom: 80px;
 }
-.to-order-container{
-    max-width: 335px;
-}
 
 
 .to-order-title {
@@ -81,6 +78,12 @@ background: var(--yellow);
     height: 476px;
 
     border-radius: 20px;
+}
+@media screen and (max-width: 374px){
+.to-order-container{
+    max-width: 320px;
+    padding: 0;
+}
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
     .to-order-section{
