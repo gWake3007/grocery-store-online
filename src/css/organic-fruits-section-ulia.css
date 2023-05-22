@@ -249,6 +249,14 @@
 
     width: 114px;
     height: 114px;
+    margin-bottom: 144px;
+  }
+}
+
+/* Decktop  */
+@media only screen and (min-width: 1280px) {
+  .button {
+    margin-bottom: 150px;
   }
 }
 .svg-card {
