@@ -1,10 +1,7 @@
 .section-container {
   padding-bottom: 80px;
 }
-.container {
-}
-.organic-container {
-}
+
 .organic-title {
   font-weight: 500;
   font-size: 28px;
@@ -57,30 +54,131 @@
 
 .organic-list-card .card:nth-last-child(9) {
   background-color: #f8766b;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .organic-list-card .card:nth-last-child(8) {
   background: #edd251;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .organic-list-card .card:nth-last-child(7) {
   background: #9dc262;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .organic-list-card .card:nth-last-child(6) {
   background: #bfd663;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .organic-list-card .card:nth-last-child(5) {
   background: #e93f29;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .organic-list-card .card:nth-last-child(4) {
   background: #db4f4b;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .organic-list-card .card:nth-last-child(3) {
   background: #9b5366;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .organic-list-card .card:nth-last-child(2) {
   background: #f47f4c;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .organic-list-card .card:nth-last-child(1) {
   background: #98b37e;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animation of cards  */
+.organic-list-card .card:nth-last-child(9):hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 2px 2px white, 4px 4px #f8766b;
+  top: -4px;
+  left: -4px;
+}
+.organic-list-card .card:nth-last-child(8):hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 2px 2px white, 4px 4px #edd251;
+  top: -4px;
+  left: -4px;
+}
+.organic-list-card .card:nth-last-child(7):hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 2px 2px white, 4px 4px#9dc262;
+  top: -4px;
+  left: -4px;
+}
+.organic-list-card .card:nth-last-child(6):hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 2px 2px white, 4px 4px#bfd663;
+  top: -4px;
+  left: -4px;
+}
+.organic-list-card .card:nth-last-child(5):hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 2px 2px white, 4px 4px#e93f29;
+  top: -4px;
+  left: -4px;
+}
+.organic-list-card .card:nth-last-child(4):hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 2px 2px white, 4px 4px#db4f4b;
+  top: -4px;
+  left: -4px;
+}
+.organic-list-card .card:nth-last-child(3):hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 2px 2px white, 4px 4px#9b5366;
+  top: -4px;
+  left: -4px;
+}
+.organic-list-card .card:nth-last-child(2):hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 2px 2px white, 4px 4px#f47f4c;
+  top: -4px;
+  left: -4px;
+}
+.organic-list-card .card:nth-last-child(1):hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 2px 2px white, 4px 4px#98b37e;
+  top: -4px;
+  left: -4px;
 }
 
 /* Mobile  */
@@ -172,6 +270,12 @@
 
 .img-card {
   margin: 0 auto;
+}
+
+.img-card:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .link-card {
