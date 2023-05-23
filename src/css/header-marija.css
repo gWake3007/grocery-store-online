@@ -50,11 +50,27 @@
     }
 }
 
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--light-grean);
+    transition: var(--cubic);
+}
+
 .logo-link {
     display: flex;
     flex-direction: row;
     gap: 8px;
     align-items: center;
+    transition: color var(--cubic);
+}
+
+.logo-link:hover,
+.logo-link:focus {
+    color: var(--light-grean);
+}
+
+.logo-icon {
+    fill: currentColor;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -94,6 +110,8 @@
     border: 1px solid transparent;
     border-radius: 10px;
     outline: none;
+    transition: border,
+        background-color var(--cubic);
 }
 
 .basket-button:hover,
@@ -135,6 +153,10 @@
     .menu-toggle {
         display: none;
     }
+}
+
+.menu-toggle {
+    transition: border, background-color var(--cubic);
 }
 
 .menu-toggle:hover,
