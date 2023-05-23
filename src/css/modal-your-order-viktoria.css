@@ -30,7 +30,7 @@
     transform: translate(-50%, -50%) rotate(0) scale(1);
     scroll-behavior: smooth;
     overflow-y: scroll;
-    height: 650px;
+    height: 100vh;
 }
 @media only screen and (max-width: 374px) {
 .modal  {
@@ -45,14 +45,28 @@
     background-image: url(../img/modal-your-order-viktoriia/tablet/girl@1x.png);
     background-repeat: no-repeat;
     background-position: right bottom;
+    background-attachment: fixed;
   }
+    @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+.modal {
+    background-image: url(../img/modal-your-order-viktoriia/tablet/girl@2x.png);
+}
+   }
 }
 @media only screen and (min-width: 1280px) {
 .modal  {
     width: 891px;
     background-image: url(../img/modal-your-order-viktoriia/desktop/girl@1x.png);
-    height: auto;
   }
+   @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+.modal {
+    background-image: url(../img/modal-your-order-viktoriia/tablet/girl@2x.png);
+    }
+}
 }
 .backdrop.is-hidden.modal {
     transform: translate(-50%, -50%) rotate(360deg) scale (0.2);
@@ -129,7 +143,7 @@
 .modal-products {
     padding: 14px 14px 8px 20px;
     width: 295px;
-    height: 119px;
+    /* height: 119px; */
     border-radius: 20px;
     margin-bottom: 12px;
 }
@@ -144,7 +158,7 @@
     position: relative;
     padding: 14px;
     width: 200px;
-    height: 250px;
+    /* height: 250px; */
     border-radius: 20px;
     margin-bottom: 0;
   }
@@ -152,7 +166,7 @@
 @media only screen and (min-width: 1280px) {
 .modal-products  {
     width: 257px;
-    height: 308px;
+    /* height: 308px; */
   }
 }
 .modal-strawberry {
@@ -304,6 +318,7 @@
     background-image: url(../img/icons.svg#icon-checkbox);
     background-repeat: no-repeat;
     background-position: center;
+    background-color: #FFFFFF;
 }
 
 .modal-form-checkbox:focus+.modal-img::after {
@@ -319,6 +334,8 @@
     width: 360px;
   }
 }
+
+
 .modal-form-input {
     width: 100%;
     opacity: 0.3;
@@ -328,12 +345,13 @@
     padding-left: 24px;
 }
 
-.modal-form-input:focus {
-    outline: none;
-    border: 1px solid #9DC262;
+.modal-form-input:invalid {
+    border-color: transparent;
+    outline: red solid 2px;
 }
 
 .modal-form-comments {
+    display: block;
     width: 100%;
     height: 132px;
     opacity: 0.3;
@@ -344,6 +362,8 @@
     resize: none;
     font-size: 14px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    background-color: transparent;
 }
 
 @media only screen and (min-width: 768px) {
@@ -352,14 +372,8 @@
     height: 145px;
   }
 }
-.modal-form-comments:focus {
-    border: 1px solid #9DC262;
-    outline: none;
-}
-.modal-form-comments:invalid {
-    border: 1px solid red;
-    outline: none;
-}
+
+
 
 .modal-form-btn {
     color: #FFFFFF;
@@ -367,7 +381,6 @@
     border: none;
     padding: 12px 24px;
     width: 92px;
-    height: 42px;
     background: #9DC162;
     border-radius: 100px;
 }
@@ -376,7 +389,7 @@
 .modal-form-btn  {
     padding: 15px 35px;
     width: 114px;
-    height: 48px;
+    
   }
 }
 
