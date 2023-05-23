@@ -181,11 +181,13 @@
 }
 
 .modal-products-label {
+    position: relative;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 
 .modal-text-wrap {
     margin-right: auto;
@@ -283,26 +285,8 @@
         height: 196px;
     }
 }
-.modal-img::after {
-    display: block;
-    border: 1.5px solid #FFFFFF;
-    border-radius: 4px;
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    content: " ";
-    flex-shrink: 0;
-}
 
-@media only screen and (min-width: 768px) {
-.modal-img::after   {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 14px;
-    right: 14px;
-  }
-}
+
 
 .visually-hiden {
     position: absolute;
@@ -314,16 +298,39 @@
     border: 0;
 }
 
-.modal-form-checkbox:checked+.modal-img::after {
-    background-image: url(../img/icons.svg#icon-checkbox);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #FFFFFF;
+.checkbox-span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 4px;
+}
+@media only screen and (min-width: 768px) {
+.checkbox-span  {
+    width: 20px;
+    height: 20px;
+  }
+}
+.checkbox-svg {
+    width: 6px;
+    height: 6px;
+    opacity: 0;
+}
+@media only screen and (min-width: 768px) {
+.checkbox-svg   {
+    width: 8px;
+    height: 8px;
+  }
+}
+.modal-form-checkbox:checked + .checkbox-span .checkbox-svg {
+    opacity: 1;
 }
 
-.modal-form-checkbox:focus+.modal-img::after {
-    outline: 2px solid red;
-}
 
 .modal-form-names {
     margin-bottom: 14px;
@@ -374,7 +381,6 @@
 }
 
 
-
 .modal-form-btn {
     color: #FFFFFF;
     cursor: pointer;
@@ -397,4 +403,3 @@
 .modal-form-btn:focus {
     background-color: #506432;
 }
-
