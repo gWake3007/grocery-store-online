@@ -25,13 +25,18 @@
     z-index: 100;
     padding: 20px;
     background-color: #FFFFFF;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0) scale(1);
     scroll-behavior: smooth;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 374px) {
 .modal  {
+    padding: 7px;
+  }
+}
+@media only screen and (min-width: 768px) {
+.modal {
     width: 704px;
     padding: 40px;
     background-image: url(../img/modal-your-order-viktoriia/tablet/girl@1x.png);
@@ -40,7 +45,7 @@
   }
 }
 @media only screen and (min-width: 1280px) {
-.modal   {
+.modal  {
     width: 891px;
     background-image: url(../img/modal-your-order-viktoriia/desktop/girl@1x.png);
   }
@@ -124,7 +129,12 @@
     border-radius: 20px;
     margin-bottom: 12px;
 }
-
+@media only screen and (max-width: 374px) {
+.modal-products  {
+    width: 274px;
+    padding-left: 5px;
+  }
+}
 @media only screen and (min-width: 768px) {
 .modal-products   {
     position: relative;
@@ -202,6 +212,7 @@
 
 @media only screen and (min-width: 768px) {
 .modal-image   {
+    display: block;
     bottom: 0;
   }
 }
@@ -209,6 +220,7 @@
     width: 88px;
     height: 95px;
 }
+
 @media only screen and (min-width: 768px) {
 .image-strawberry  {
     width: 133px;
@@ -285,10 +297,9 @@
 }
 
 .modal-form-checkbox:checked+.modal-img::after {
-    background-image: url(../img/icons.svg#icon-checbox);
+    background-image: url(../img/icons.svg#icon-checkbox);
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #EDD251;
 }
 
 .modal-form-checkbox:focus+.modal-img::after {
