@@ -29,10 +29,13 @@
     left: 50%;
     transform: translate(-50%, -50%) rotate(0) scale(1);
     scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 650px;
 }
 @media only screen and (max-width: 374px) {
 .modal  {
-    padding: 7px;
+    padding: 10px;
+    width: 300px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -48,6 +51,7 @@
 .modal  {
     width: 891px;
     background-image: url(../img/modal-your-order-viktoriia/desktop/girl@1x.png);
+    height: auto;
   }
 }
 .backdrop.is-hidden.modal {
@@ -131,7 +135,7 @@
 }
 @media only screen and (max-width: 374px) {
 .modal-products  {
-    width: 274px;
+    width: 280px;
     padding-left: 5px;
   }
 }
@@ -368,13 +372,14 @@
     border-radius: 100px;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) {
 .modal-form-btn  {
     padding: 15px 35px;
     width: 114px;
     height: 48px;
   }
 }
+
 .modal-form-btn:hover,
 .modal-form-btn:focus {
     background-color: #506432;
