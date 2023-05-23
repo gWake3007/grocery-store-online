@@ -56,7 +56,7 @@
     transition: var(--cubic);
 }
 
-.logo-link {
+.header-logo-link {
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -64,8 +64,8 @@
     transition: color var(--cubic);
 }
 
-.logo-link:hover,
-.logo-link:focus {
+.header-logo-link:hover,
+.header-logo-link:focus {
     color: var(--light-grean);
 }
 
@@ -74,7 +74,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-    .logo-link {
+    .header-logo-link {
         margin-left: 94px;
     }
 }
@@ -86,7 +86,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-    .logo-link {
+    .header-logo-link {
         content: "";
         position: absolute;
         top: 50%;
