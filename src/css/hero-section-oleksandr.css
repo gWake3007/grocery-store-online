@@ -1,0 +1,630 @@
+
+
+.hero-section > .container {
+  
+  position: relative;
+  color: var(--white);
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  .hero-section > .container {
+    padding-top: 56px;
+    padding-bottom: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section > .container {
+    padding-top: 64px;
+    padding-bottom: 137px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-section > .container {
+    padding-bottom: 150px;
+  }
+}
+
+.hero-title {
+  position: relative;
+  z-index: 100;
+
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+
+  text-transform: uppercase;
+  text-shadow: var(--shop-now);
+}
+
+@media only screen and (min-width: 375px) {
+  .hero-title {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 49px;
+    line-height: 1.08;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-title {
+    font-size: 64px;
+    line-height: 1;
+    width: 912px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/**
+  |============================
+  | Hero main
+  |============================
+*/
+
+/* banana  */
+.banana {
+  position: absolute;
+  top: 81px;
+  left: 12px;
+  z-index: 100;
+  width: 75px;
+  height: 53px;
+  transform: rotate(20deg);
+  background-size: cover;
+
+  background-image: url(../img/hero/banana_mobile@1x.png);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .banana {
+    background-image: url(../img/hero/banana_mobile@2x.png);
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .banana {
+    top: 120px;
+    left: 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .banana {
+    top: 155px;
+    left: 27.22px;
+
+    width: 132px;
+    height: 90px;
+
+    transform: rotate(0);
+    background-image: url(../img/hero/banana_tablet@1x.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .banana {
+      background-image: url(../img/hero/banana_tablet@2x.png);
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .banana {
+    top: 185px;
+    left: 194px;
+    width: 183.21px;
+    height: 124.61px;
+    background-image: url(../img/hero/banana_desktop@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .banana {
+      background-image: url(../img/hero/banana_desktop@2x.png);
+    }
+  }
+}
+
+/* strawberry  */
+
+.strawberry {
+  position: absolute;
+
+  top: 60px;
+  left: 243px;
+  z-index: 3;
+
+  width: 56px;
+  height: 56px;
+
+  background-image: url(../img/hero/strawberry_mobile@1x.png);
+  background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .strawberry {
+    background-image: url(../img/hero/strawberry_mobile@2x.png);
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .strawberry {
+    top: 59px;
+    left: 301px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .strawberry {
+    top: 52px;
+    left: 622px;
+
+    width: 108px;
+    height: 108px;
+    background-image: url(../img/hero/strawberry_tablet@1x.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .strawberry {
+      background-image: url(../img/hero/strawberry_tablet@2x.png);
+    }
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .strawberry {
+    top: 39px;
+    left: 937px;
+  
+
+    width: 120px;
+    height: 120px;
+
+  
+    background-image: url(../img/hero/strawberry_desktop@1x.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .strawberry {
+      background-image: url(../img/hero/strawberry_desktop@2x.png);
+    }
+  }
+}
+
+/* main window */
+
+.hero-main {
+  position: relative;
+  top: -70px;
+  left: 0;
+  z-index: 10;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px;
+  max-width: 335px;
+  height: 509px;
+  border-radius: 500px;
+
+  background-color: var(--violet);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-main {
+    top: -119px;
+
+    max-width: 486px;
+    height: 742px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-main  {
+    
+    top: -147px;
+  }
+}
+
+.hero-main:before {
+  content: '';
+  position: absolute;
+
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  z-index: -1;
+  border-radius: 500px;
+  /* border: 1px solid transaprent; */
+  background: linear-gradient(
+    359.94deg,
+    #ffffff -1.7%,
+    rgba(255, 255, 255, 0.441769) 30.64%,
+    rgba(255, 255, 255, 0) 76.92%
+  );
+}
+
+.hero-main:after {
+
+  content: '';
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 500px;
+  z-index: -1;
+
+  background-color: var(--violet);
+}
+
+.hero-main-image {
+  max-width: 311px;
+  height: 484px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 500px;
+
+  overflow: hidden;
+
+  background-image: url(../img/hero/redhair_girl_m@1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-main-image {
+    background-image: url(../img/hero/redhair_girl_m@2x.jpg);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-main-image {
+    max-width: 452px;
+    height: 708px;
+    background-image: url(../img/hero/redhair_girl@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-main-image {
+      background-image: url(../img/hero/redhair_girl@2x.jpg);
+    }
+  }
+}
+
+/* hero button  */
+.hero-btn {
+  position: absolute;
+  top: 458px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  min-width: 80px;
+  min-height: 80px;
+  border: none;
+  border-radius: 50%;
+
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-family: inherit;
+  text-transform: uppercase;
+
+  color: var(--violet);
+  background-color: var(--white);
+}
+
+@media only screen and (min-width: 375px) {
+  .hero-btn {
+    position: absolute;
+    top: 456px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-btn {
+    top: 644px;
+    width: 114px;
+    height: 114px;
+
+    font-size: 28px;
+  }
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--light-grean);
+}
+
+.hero-btn-wrapper {
+  transform: rotate(-14deg);
+
+  text-shadow: var(--shop-now);
+}
+
+/* negative container */
+
+.negative {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .negative {
+    margin-bottom: -65px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+   .negative {
+
+    margin-bottom: -575px;
+    
+  }
+}
+
+
+/* text  */
+
+.hero-text {
+  max-width: 279px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 44px;
+
+  text-shadow: var(--shop-now);
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-text {
+    margin-left: 0;
+    margin-bottom: 45px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+   .hero-text {
+
+    max-width: 222px;
+    margin-left: 32px;
+    
+  }
+}
+
+/**
+  |============================
+  | Cards
+  |============================
+*/
+
+/* card container */
+
+.card-wrapper {
+  position: relative;
+
+  border-radius: 500px;
+  width: 249px;
+  max-height: 387px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card-wrapper-watermelon {
+  padding-top: 28px;
+  padding-bottom: 40px;
+  margin-bottom: 44px;
+
+  background-color: var(--light-grean);
+}
+
+@media only screen and (min-width: 768px) {
+  .card-wrapper-watermelon {
+    margin-left: 32px;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+   .card-wrapper-watermelon {
+    margin-bottom: 0;
+    
+  }
+}
+
+.card-wrapper-strawberry {
+  padding-top: 28px;
+  padding-bottom: 40px;
+
+  background-color: var(--yellow);
+}
+
+@media only screen and (min-width: 768px) {
+  .card-wrapper-strawberry {
+    position: absolute;
+    top: 904px;
+    right: 64px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .card-wrapper-strawberry  {
+    
+    top:334px;
+    left: 965px;
+
+  }
+}
+/* oval shadow */
+
+.oval {
+  position: absolute;
+  top: 228px;
+  left: 4px;
+  width: 239px;
+  height: 38px;
+  border-radius: 50%;
+  opacity: 0.1;
+  filter: blur(13.5914px);
+
+  background-color: #000;
+}
+
+/* card info */
+.hero-card-title {
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+
+  text-shadow: var(--shop-now);
+}
+
+.hero-card-text {
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+
+  text-shadow: var(--shop-now);
+}
+
+.watermelon-text {
+  max-width: 155px;
+}
+
+.strawberry-text {
+  max-width: 163px;
+}
+
+.title-watermelon {
+  margin-bottom: 61px;
+}
+
+.title-strawberry {
+  margin-bottom: 19px;
+}
+
+.card-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.watermelon-img {
+  margin-bottom: 2px;
+}
+
+.strawberry-img {
+  margin-bottom: 17px;
+}
+
+/**
+  |============================
+  | Hero LIST
+  |============================
+*/
+.hero-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 44px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-list {
+    position: absolute;
+    top: 1334px;
+    right: 32px;
+
+    max-width: 266px;
+    justify-content: end;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+   .hero-list {
+    
+    top: 767px;
+    left: 969px;
+  }
+}
+
+.hero-item {
+  display: block;
+  border: 1px solid var(--white);
+  border-radius: 1000px;
+}
+.hero-item:nth-child(even) {
+  width: 132px;
+}
+.hero-item:nth-child(odd) {
+  width: 125px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-item:nth-child(2) {
+    width: 133px;
+  }
+
+  .hero-item:nth-child(3) {
+    width: 115px;
+  }
+
+  .hero-item:last-child {
+    width: 110px;
+  }
+}
+
+.hero-list-link {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  text-align: center;
+}
+
+.hero-list-title {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  text-shadow: var(--shop-now);
+}
