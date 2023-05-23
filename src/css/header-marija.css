@@ -7,7 +7,7 @@
 .header-container {
     display: flex;
     align-items: center;
-    height: 50px;
+    padding: 16px 0;
 }
 
 @media screen and (max-width: 767px) {
