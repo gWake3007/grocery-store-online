@@ -10,6 +10,13 @@
     padding: 16px 0;
 }
 
+.logo-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29px;
+    letter-spacing: -0.04em;
+}
+
 @media screen and (max-width: 376px) {
     .header-container{
         padding: 5px 0;
