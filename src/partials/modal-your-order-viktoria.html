@@ -1,0 +1,145 @@
+<div class="backdrop" data-modal="modal-1">
+  <div class="modal">
+      <div class="modal-header">
+          <h2 class="modal-uppertitle">Your Order</h2>
+          <button
+              class="modal-button"
+              type="button"
+              data-modal-close>
+              <svg
+                  class="modal-icon"
+                  width="24"
+                  height="24">
+                  <use href="./img/icons.svg#icon-x"></use>
+              </svg>
+          </button>
+      </div>
+      <form class="modal-form">
+          <ul class="modal-list">
+              <li class="modal-products modal-strawberry">
+                   <div class="modal-products-label">
+                    <div class="modal-text-wrap">
+                          <h3 class="modal-products-uppertitle">Strawberry Basket</h3>
+                          <p class="modal-products-undertitle">Plant</p>
+                      </div>
+                      <div class="modal-img">
+                       <label for="strawberry-check">
+                          <picture class="modal-image image-strawberry">
+                              <source media="(min-width: 1280px)" srcset="./img/modal-your-order-viktoriia/desktop/strawberry@1x.png 1x, ./img/modal-your-order-viktoriia/desktop/strawberry@2x.png 2x"
+                                  type="image/png">
+                              <source media="(min-width: 768px)" srcset="./img/modal-your-order-viktoriia/tablet/strawberry@1x.png 1x, ./img/modal-your-order-viktoriia/tablet/strawberry@2x.png 2x"
+                                  type="image/png">
+                              <source media="(max-width: 767px)" srcset="./img/modal-your-order-viktoriia/mobile/strawberry@1x.png 1x,  ./img/modal-your-order-viktoriia/mobile/strawberry@2x.png 2x"
+                                  type="image/png">
+                              <img src="./img/modal-your-order-viktoriia/mobile/strawberry@1x.png" alt="Strawberry Basket"
+                                  loading="lazy">
+                          </picture>
+                          <input
+                      type="checkbox"
+                      id="strawberry-check"
+                      class="modal-form-checkbox visually-hiden"
+                      name="strawberry_basket"
+                      value="privacy_policy">
+                      </label>
+                      </div>
+                      </div>
+              </li>
+              <li class="modal-products modal-apple">
+                  <div class="modal-products-label">
+                      <div class="modal-text-wrap">
+                          <h3 class="modal-products-uppertitle">Apple Basket</h3>
+                          <p class="modal-products-undertitle">Plant</p>
+                      </div>
+                      <div class="modal-img">
+                          <label for="apple-check">
+                          <picture class="modal-image image-apple">
+                              <source media="(min-width: 1280px)"
+                                  srcset="./img/modal-your-order-viktoriia/desktop/box@1x.png 1x, ./img/modal-your-order-viktoriia/desktop/box@2x.png 2x"
+                                  type="image/png">
+                              <source media="(min-width: 768px)"
+                                  srcset="./img/modal-your-order-viktoriia/tablet/box@1x.png 1x, ./img/modal-your-order-viktoriia/tablet/box@2x.png 2x"
+                                  type="image/png">
+                              <source media="(max-width: 767px)"
+                                  srcset="./img/modal-your-order-viktoriia/mobile/box@1x.png 1x,  ./img/modal-your-order-viktoriia/mobile/box@2x.png 2x"
+                                  type="image/png">
+                              <img src="./img/modal-your-order-viktoriia/mobile/box@1x.png" alt="Apple Basket"
+                                  loading="lazy">
+                          </picture>
+                          <input
+                          type="checkbox"
+                          id="apple-check"
+                          class="modal-form-checkbox visually-hiden"
+                          name="user_privacy"
+                          value="privacy_policy">
+                          </label>
+                      </div>
+                  </div>
+              </li>
+              <li class="modal-products modal-fruits">
+                  <div class="modal-products-label">
+                      <div class="modal-text-wrap">
+                          <h3 class="modal-products-uppertitle">Fruits Basket</h3>
+                          <p class="modal-products-undertitle">Plant</p>
+                      </div>
+                      <div class="modal-img">
+                          <label for="fruits-check" >
+                          <picture class="modal-image image-fruits">
+                              <source media="(min-width: 1280px)"
+                                  srcset="./img/modal-your-order-viktoriia/desktop/fruits@1x.png 1x, ./img/modal-your-order-viktoriia/desktop/fruits@2x.png 2x"
+                                  type="image/png">
+                              <source media="(min-width: 768px)"
+                                  srcset="./img/modal-your-order-viktoriia/tablet/fruits@1x.png 1x, ./img/modal-your-order-viktoriia/tablet/fruits@2x.png 2x"
+                                  type="image/png">
+                              <source media="(max-width: 767px)"
+                                  srcset="./img/modal-your-order-viktoriia/mobile/fruits@1x.png 1x,  ./img/modal-your-order-viktoriia/mobile/fruits@2x.png 2x"
+                                  type="image/png">
+                              <img src="./img/modal-your-order-viktoriia/mobile/fruits@1x.png" alt="Fruits Basket"
+                                  loading="lazy">
+                          </picture>
+                          <input
+                          type="checkbox"
+                          id="fruits-check"
+                          class="modal-form-checkbox visually-hiden"
+                          name="fruits_basket"
+                          value="fruits_basket">
+                          </label>
+                      </div>
+                  </div>
+              </li>
+          </ul>
+          <label class="modal-form-names">
+              <input
+                  type="text"
+                  class="modal-form-input"
+                  pattern="[A-Za-z]"
+                  placeholder="Enter full name..."
+                  name="user-name">
+          </label>
+          <label class="modal-form-names">
+              <input
+                  type="email"
+                  class="modal-form-input"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  placeholder="Enter email..."
+                  name="user-email">
+          </label>
+          <label class="modal-form-names">
+              <input
+                  type="text"
+                  class="modal-form-input"
+                  pattern="[0-9\s]{13,19}"
+                  placeholder="Enter card.."
+                  name="user_card">
+          </label>
+          <label>
+              <textarea
+                  name="user_comments"
+                  class="modal-form-comments"
+                  placeholder="Enter comments..."></textarea>
+          </label>
+          <button
+              type="submit"
+              class="modal-form-btn" data-modal-open="modal-2">Submit</button>
+      </form>
+</div>
+</div>
