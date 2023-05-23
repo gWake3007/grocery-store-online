@@ -10,6 +10,12 @@
     padding: 16px 0;
 }
 
+@media screen and (max-width: 376px) {
+    .header-container{
+        padding: 5px 0;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .header-container {
         justify-content: space-between;
