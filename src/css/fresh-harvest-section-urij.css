@@ -99,6 +99,7 @@
   margin-right: auto;
   margin-bottom: 80px;
   margin-left: auto;
+
   text-align: center;
   color: var(--white);
   text-shadow: var(--shop-now);
@@ -146,7 +147,7 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-.contacts-form-input:invalid {
+.contacts-form-input:invalid:not(:placeholder-shown) {
   border-color: transparent;
   outline: red solid 2px;
 }
