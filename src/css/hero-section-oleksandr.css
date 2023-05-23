@@ -36,6 +36,7 @@
   font-weight: 500;
   line-height: 1;
   text-align: center;
+  white-space: pre-line;
 
   text-transform: uppercase;
   text-shadow: var(--shop-now);
