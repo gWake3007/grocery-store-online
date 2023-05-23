@@ -66,24 +66,24 @@
   }
 }
 
-.logo-icon {
+.footer-logo-icon {
   margin-right: 8px;
 }
 
-.logo-link {
+.footer-logo-link {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.logo-link:hover,
-.logo-link:focus {
+.footer-logo-link:hover,
+.footer-logo-link:focus {
   color: var(--light-grean);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.logo-icon {
+.footer-logo-icon {
   fill: currentColor;
 }
 /* navigation */
