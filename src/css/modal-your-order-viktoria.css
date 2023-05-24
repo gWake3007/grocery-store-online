@@ -16,7 +16,7 @@
     opacity: 1;
     visibility: visible;
     pointer-events: all;
-  }
+}
 
 .modal {
     position: absolute;
@@ -32,12 +32,14 @@
     overflow-y: scroll;
     height: 100vh;
 }
+
 @media only screen and (max-width: 374px) {
-.modal  {
-    padding: 10px;
-    width: 300px;
-  }
+    .modal {
+        padding: 10px;
+        width: 300px;
+    }
 }
+
 @media only screen and (min-width: 768px) {
 .modal {
     width: 704px;
@@ -52,10 +54,11 @@
    (min-resolution: 2dppx) {
 .modal {
     background-image: url(../img/modal-your-order-viktoriia/tablet/girl@2x.png);
-}
    }
 }
+
 @media only screen and (min-width: 1280px) {
+
 .modal  {
     width: 891px;
     background-image: url(../img/modal-your-order-viktoriia/desktop/girl@1x.png);
@@ -68,15 +71,18 @@
     }
 }
 }
+
 .backdrop.is-hidden.modal {
     transform: translate(-50%, -50%) rotate(360deg) scale (0.2);
     opacity: 0;
 }
+
 .modal-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
 }
+
 .modal-uppertitle {
     font-weight: 500;
     font-size: 28px;
@@ -86,13 +92,15 @@
     color: #AE1332;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
+
 @media only screen and (min-width: 768px) {
-.modal-uppertitle  {
-    font-size: 40px;
-    line-height: 1.1;
-  }
+    .modal-uppertitle {
+        font-size: 40px;
+        line-height: 1.1;
+    }
 }
- .modal-button {
+
+.modal-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,12 +114,13 @@
     padding: 0;
     stroke: #AE1332;
 }
+
 @media only screen and (min-width: 768px) {
-.modal-button  {
-    width: 28px;
-    height: 28px;
-    top: 20px;
-  }
+    .modal-button {
+        width: 28px;
+        height: 28px;
+        top: 20px;
+    }
 }
 
 .modal-button:hover,
@@ -128,18 +137,20 @@
 .modal-list {
     margin-bottom: 40px;
 }
- 
+
 @media only screen and (min-width: 768px) {
-.modal-list   {
-    display: flex;
-    gap: 12px;
-  }
+    .modal-list {
+        display: flex;
+        gap: 12px;
+    }
 }
+
 @media only screen and (min-width: 1280px) {
-.modal-list   {
-    gap: 20px;
-  }
+    .modal-list {
+        gap: 20px;
+    }
 }
+
 .modal-products {
     padding: 14px 14px 8px 20px;
     width: 295px;
@@ -147,12 +158,14 @@
     border-radius: 20px;
     margin-bottom: 12px;
 }
+
 @media only screen and (max-width: 374px) {
-.modal-products  {
-    width: 280px;
-    padding-left: 5px;
-  }
+    .modal-products {
+        width: 280px;
+        padding-left: 5px;
+    }
 }
+
 @media only screen and (min-width: 768px) {
 .modal-products   {
     position: relative;
@@ -163,18 +176,22 @@
     margin-bottom: 0;
   }
 }
+
 @media only screen and (min-width: 1280px) {
 .modal-products  {
     width: 257px;
     /* height: 308px; */
   }
 }
+
 .modal-strawberry {
     background: #F8766B;
 }
+
 .modal-apple {
     background: #EDD251;
 }
+
 .modal-fruits {
     background: #9DC262;
     margin-bottom: 0;
@@ -191,14 +208,15 @@
 
 .modal-text-wrap {
     margin-right: auto;
-}   
+}
 
 @media only screen and (min-width: 768px) {
-.modal-text-wrap  {
-    margin-top: 40px;
-    margin-bottom: 4px;
-  }
+    .modal-text-wrap {
+        margin-top: 40px;
+        margin-bottom: 4px;
+    }
 }
+
 .modal-products-uppertitle {
     font-weight: 700;
     font-size: 18px;
@@ -206,18 +224,20 @@
     letter-spacing: -0.04em;
     color: #FFFFFF;
 }
+
 @media only screen and (min-width: 768px) {
-.modal-products-uppertitle   {
-    margin-bottom: 2px;
-  }
+    .modal-products-uppertitle {
+        margin-bottom: 2px;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
-.modal-products-uppertitle  {
-    font-size: 24px;
-    line-height: 1.17;
-  }
+    .modal-products-uppertitle {
+        font-size: 24px;
+        line-height: 1.17;
+    }
 }
+
 .modal-products-undertitle {
     font-size: 14px;
     line-height: 1.29;
@@ -231,54 +251,62 @@
 }
 
 @media only screen and (min-width: 768px) {
-.modal-image   {
-    display: block;
-    bottom: 0;
-  }
+    .modal-image {
+        display: block;
+        bottom: 0;
+    }
 }
+
 .image-strawberry {
     width: 88px;
     height: 95px;
 }
 
 @media only screen and (min-width: 768px) {
-.image-strawberry  {
-    width: 133px;
-    height: 148px;
-  }
+    .image-strawberry {
+        width: 133px;
+        height: 148px;
+    }
 }
+
 @media only screen and (min-width: 1280px) {
     .image-strawberry {
         width: 173px;
         height: 196px;
     }
 }
+
 .image-apple {
     width: 106px;
     height: 95px;
 }
+
 @media only screen and (min-width: 768px) {
     .image-apple {
         width: 172px;
         height: 148px;
     }
 }
+
 @media only screen and (min-width: 1280px) {
     .image-apple {
         width: 229px;
         height: 196px;
     }
 }
+
 .image-fruits {
     width: 107px;
     height: 95px;
 }
+
 @media only screen and (min-width: 768px) {
     .image-fruits {
         width: 172px;
         height: 148px;
     }
 }
+
 @media only screen and (min-width: 1280px) {
     .image-fruits {
         width: 229px;
@@ -310,16 +338,29 @@
     border: 1.5px solid #FFFFFF;
     border-radius: 4px;
 }
+  
 @media only screen and (min-width: 768px) {
-.checkbox-span  {
-    width: 20px;
-    height: 20px;
-  }
+    .checkbox-span {
+        width: 20px;
+        height: 20px;
+    }
 }
+
 .checkbox-svg {
     width: 6px;
     height: 6px;
     opacity: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .checkbox-svg {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+.modal-form-checkbox:checked+.checkbox-span .checkbox-svg {
+    opacity: 1;
 }
 @media only screen and (min-width: 768px) {
 .checkbox-svg   {
@@ -332,14 +373,15 @@
 }
 
 
+
 .modal-form-names {
     margin-bottom: 14px;
 }
 
 @media only screen and (min-width: 768px) {
-.modal-form-names  {
-    width: 360px;
-  }
+    .modal-form-names {
+        width: 360px;
+    }
 }
 
 
@@ -379,6 +421,7 @@
     height: 145px;
   }
 }
+
 
 
 .modal-form-btn {
