@@ -24,7 +24,7 @@
       
   }
   
-  .basket-button {
+  .mobile-basket-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,8 +39,8 @@
     background-color var(--cubic);
 }
 
-.basket-button:hover,
-.basket-button:focus {
+.mobile-basket-button:hover,
+.mobile-basket-button:focus {
     border: 1px solid var(--light-grean);
     background-color: rgba(174, 19, 50, 0.1);
 }
