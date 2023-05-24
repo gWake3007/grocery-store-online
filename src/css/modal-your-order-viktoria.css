@@ -143,6 +143,12 @@
 .modal-list {
     margin-bottom: 40px;
 }
+.modal-form-input:invalid{
+    border: red solid 1px ;
+}
+.modal-form-input:valid{
+    border: #000000 solid 1px;
+}
 
 @media only screen and (min-width: 768px) {
     .modal-list {
