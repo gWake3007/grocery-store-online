@@ -31,6 +31,7 @@
 
 .to-order-list {
     margin-bottom: 44px;
+    
 }
 
 .to-order-list-item {
@@ -88,13 +89,26 @@ background: var(--yellow);
     border-radius: 20px;
 }
 @media screen and (max-width: 374px){
+
 .to-order-container{
     max-width: 320px;
-    padding: 0;
+}
+.to-order-title{
+    font-size: 24px;
+}
+.to-order-text{
+    font-size: 12px;
+}
+.to-order-list-item{
+    font-size: 11px;
+}
+.to-order-list-step{
+    font-size: 14px;
+
+    min-width: 125px;
 }
 .to-order-gif{
-    width: 320px;
-    height: 455px;
+    height: 398px;
 }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
@@ -118,7 +132,13 @@ background: var(--yellow);
     margin-bottom: 24px;
     padding: 40px 20px;
 }
+ .to-order-list-item:nth-child(n + 2) {
+    padding: 40px 20px;
+}
 
+.to-order-list-item:nth-child(n + 3) {
+    padding: 40px 20px;
+}
 .to-order-gif{
 width: 704px;
 height: 476px;
@@ -129,7 +149,7 @@ height: 476px;
         font-size: 40px;
         line-height: 44px;
 
-        max-width: 624px;
+        width: 680px;
 }  
     .to-order-text{
         max-width: 509px;
@@ -151,7 +171,7 @@ height: 476px;
             font-size: 40px;
             line-height: 44px;
     
-            max-width: 624px;
+            max-width: 680px;
         }
         .to-order-list {
             display: flex;
@@ -162,10 +182,12 @@ height: 476px;
         }
         .to-order-list-item {
             width: 389px;
-            height: 128px;
+            max-height: 128px;
 
             padding: 40px 20px;
+            margin: 0;
         }
+               
         .to-order-gif {
             width: 860px;
             height: 476px;
