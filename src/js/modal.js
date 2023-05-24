@@ -39,4 +39,32 @@
         }
       });
     });
-  })();
+})();
+
+  document.body.classList.add('modal-open');
+document.body.classList.remove('modal-open');
+
+var formInput = document.querySelectorAll('.modal-form-input');
+
+function checkFormValidity() {
+  var isValid = true;
+
+  formInput.forEach(function (input) {
+    if (!input.checkValidity()) {
+      isValid = false;
+    }
+  });
+
+  var submitButton = document.querySelector('.modal-form-btn');
+
+  if (isValid) {
+    submitButton.removeAttribute('disabled');
+  } else {
+    submitButton.setAttribute('disabled', 'disabled');
+  }
+}
+
+formInput.forEach(function (input) {
+  input.addEventListener('input', checkFormValidity);
+});
+

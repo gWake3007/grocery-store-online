@@ -16,57 +16,34 @@
   }
 }
 
-.contacts-section .container {
-  position: relative;
-  padding-top: 53px;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
-  .contacts-section .container {
-    padding-top: 79px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .contacts-section .container {
-    padding-top: 89px;
-  }
-}
-
 .contacts-title {
-  position: absolute;
-  top: 0px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
   font-weight: 500;
   line-height: 1;
   text-align: center;
+  letter-spacing: -0.04em;
   color: var(--white);
   text-transform: uppercase;
+  z-index: 10;
   text-shadow: var(--shop-now);
 }
 
 @media only screen and (max-width: 767px) {
   .contacts-title {
-    max-width: 335px;
     font-size: 32px;
   }
 }
 
-@media only screen and (max-width: 374px) {
+@media only screen and (max-width: 330px) {
   .contacts-title {
-    width: calc(100% - 40px);
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .contacts-title {
-    left: 50%;
-    transform: translateX(-50%);
+    font-size: 30px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
   .contacts-title {
-    width: 648px;
     font-size: 54px;
   }
 }
@@ -78,8 +55,14 @@
   }
 }
 
+.contacts-section-list {
+  position: relative;
+  top: -43px;
+}
+
 @media only screen and (min-width: 768px) {
   .contacts-section-list {
+    top: -30px;
     display: flex;
     gap: 16px;
     margin-bottom: 80px;
@@ -88,6 +71,7 @@
 
 @media only screen and (min-width: 1280px) {
   .contacts-section-list {
+    top: -40px;
     gap: 24px;
   }
 }
@@ -115,6 +99,7 @@
   margin-right: auto;
   margin-bottom: 80px;
   margin-left: auto;
+
   text-align: center;
   color: var(--white);
   text-shadow: var(--shop-now);
@@ -162,17 +147,21 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-.contacts-form-input:invalid {
+.contacts-form-input:invalid:not(:placeholder-shown) {
   border-color: transparent;
   outline: red solid 2px;
+}
+
+.contacts-form-input:invalid ~ .feedback-send-btn {
+  opacity: 0.65;
+  pointer-events: none;
 }
 
 .feedback-send-btn {
   position: absolute;
   top: 0;
   right: 0;
-
-  width: 102px;
+  min-width: 102px;
   height: 48px;
   border: none;
   border-radius: 100px;

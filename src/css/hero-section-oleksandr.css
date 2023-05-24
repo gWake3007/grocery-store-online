@@ -1,4 +1,23 @@
 
+@keyframes shake {
+  1%,
+  9% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  2%,
+  8% {
+    transform: translate3d(1px, 0, 0);
+  }
+  3%,
+  5%,
+  7% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  4%,
+  6% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
 
 .hero-section > .container {
   
@@ -7,23 +26,23 @@
 
 }
 
-
 @media only screen and (max-width: 767px) {
-  .hero-section > .container {
+  .hero-section {
     padding-top: 56px;
     padding-bottom: 80px;
   }
 }
 
+
 @media only screen and (min-width: 768px) {
-  .hero-section > .container {
+  .hero-section {
     padding-top: 64px;
     padding-bottom: 137px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
-  .hero-section > .container {
+  .hero-section  {
     padding-bottom: 150px;
   }
 }
@@ -36,9 +55,11 @@
   font-weight: 500;
   line-height: 1;
   text-align: center;
+  white-space: pre-line;
 
   text-transform: uppercase;
   text-shadow: var(--shop-now);
+  letter-spacing: 4%;
 }
 
 @media only screen and (min-width: 375px) {
@@ -73,11 +94,11 @@
 /* banana  */
 .banana {
   position: absolute;
-  top: 81px;
-  left: 12px;
+  top: 37px;
+  left: 19px;
   z-index: 100;
-  width: 75px;
-  height: 53px;
+  width: 55px;
+  height: 36px;
   transform: rotate(20deg);
   background-size: cover;
 
@@ -95,21 +116,25 @@
 
 @media only screen and (min-width: 375px) {
   .banana {
-    top: 120px;
-    left: 8px;
+    top: 59px;
+    left: 11px;
+
+    width: 75px;
+    height: 53px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .banana {
-    top: 155px;
-    left: 27.22px;
+    top: 89px;
+    left: 12.22px;
 
-    width: 132px;
-    height: 90px;
+    width: 175px;
+    height: 122px;
 
     transform: rotate(0);
     background-image: url(../img/hero/banana_tablet@1x.png);
+  
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -124,10 +149,10 @@
 
 @media only screen and (min-width: 1280px) {
   .banana {
-    top: 185px;
-    left: 194px;
-    width: 183.21px;
-    height: 124.61px;
+    top: 111px;
+    left: 179px;
+    width: 248.21px;
+    height: 169.61px;
     background-image: url(../img/hero/banana_desktop@1x.png);
   }
   @media (min-device-pixel-ratio: 2),
@@ -145,7 +170,7 @@
 .strawberry {
   position: absolute;
 
-  top: 60px;
+  top: -3px;
   left: 243px;
   z-index: 3;
 
@@ -167,15 +192,15 @@
 
 @media only screen and (min-width: 375px) {
   .strawberry {
-    top: 59px;
-    left: 301px;
+    top: -2px;
+    left: 303px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .strawberry {
-    top: 52px;
-    left: 622px;
+    top: -12px;
+    left: 628px;
 
     width: 108px;
     height: 108px;
@@ -194,8 +219,8 @@
 
 @media only screen and (min-width: 1280px) {
   .strawberry {
-    top: 39px;
-    left: 937px;
+    top: -26px;
+    left: 954px;
   
 
     width: 120px;
@@ -235,7 +260,7 @@
 
 @media only screen and (min-width: 768px) {
   .hero-main {
-    top: -119px;
+    top: -122px;
 
     max-width: 486px;
     height: 742px;
@@ -327,7 +352,7 @@
 .hero-btn {
   position: absolute;
   top: 458px;
-  left: 50%;
+  left: 37%;
   transform: translateX(-50%);
 
   display: flex;
@@ -348,12 +373,18 @@
 
   color: var(--violet);
   background-color: var(--white);
+
+  animation: shake 8s cubic-bezier(.36, .07, .19, .97) both infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 @media only screen and (min-width: 375px) {
   .hero-btn {
-    position: absolute;
+   
     top: 456px;
+    left: 39%;
   }
 }
 
@@ -476,7 +507,7 @@
 @media only screen and (min-width: 768px) {
   .card-wrapper-strawberry {
     position: absolute;
-    top: 904px;
+    top: 838px;
     right: 64px;
   }
 }
@@ -484,7 +515,7 @@
 @media only screen and (min-width: 1280px) {
   .card-wrapper-strawberry  {
     
-    top:334px;
+    top:274px;
     left: 965px;
 
   }
@@ -565,13 +596,20 @@
   gap: 8px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 44px;
+}
+
+@media only screen and (max-width: 767px) {
+   
+  .hero-list {
+    
+    margin-bottom: 44px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .hero-list {
     position: absolute;
-    top: 1334px;
+    top: 1266px;
     right: 32px;
 
     max-width: 266px;
@@ -582,7 +620,7 @@
 @media only screen and (min-width: 1280px) {
    .hero-list {
     
-    top: 767px;
+    top: 707px;
     left: 969px;
   }
 }
@@ -619,6 +657,12 @@
   padding-bottom: 12px;
 
   text-align: center;
+}
+
+.hero-list-link:hover,
+.hero-list-link:focus {
+
+  box-shadow: ;
 }
 
 .hero-list-title {

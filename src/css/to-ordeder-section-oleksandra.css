@@ -31,6 +31,7 @@
 
 .to-order-list {
     margin-bottom: 44px;
+    
 }
 
 .to-order-list-item {
@@ -38,7 +39,7 @@
     flex-direction: row;
     align-items: center;
 
-    height: 112px;
+    /* height: 112px; */
 
     margin-bottom: 20px;
     padding: 20px;
@@ -46,25 +47,33 @@
     background: var(--white);
     border-radius: 20px;
 }
+.to-order-list-item:nth-child(n + 2){
+    padding: 32px 20px;
+}
+.to-order-list-item:nth-child(n + 3) {
+    padding: 29px 20px;
+}
 .to-order-list-item:last-child{
     margin-bottom: 0;
 }
+
 
 .to-order-list-step {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 
     min-width: 136px;
-    height: 48px;
 
     background: var(--violet);
     border-radius: 200px;
     color: var(--white);
 
     font-size: 18px;
-        line-height: 1.33;
+    line-height: 1.33;
 }
 .step-2{
 background: var(--light-grean);
@@ -80,9 +89,26 @@ background: var(--yellow);
     border-radius: 20px;
 }
 @media screen and (max-width: 374px){
+
 .to-order-container{
     max-width: 320px;
-    padding: 0;
+}
+.to-order-title{
+    font-size: 24px;
+}
+.to-order-text{
+    font-size: 12px;
+}
+.to-order-list-item{
+    font-size: 11px;
+}
+.to-order-list-step{
+    font-size: 14px;
+
+    min-width: 125px;
+}
+.to-order-gif{
+    height: 398px;
 }
 }
 @media screen and (min-width: 768px) and (max-width: 1279px){
@@ -103,9 +129,14 @@ background: var(--yellow);
     margin-bottom: 80px;
 }
 .to-order-list-item{
-    height: 128px;
-
     margin-bottom: 24px;
+    padding: 40px 20px;
+}
+ .to-order-list-item:nth-child(n + 2) {
+    padding: 40px 20px;
+}
+
+.to-order-list-item:nth-child(n + 3) {
     padding: 40px 20px;
 }
 .to-order-gif{
@@ -118,7 +149,7 @@ height: 476px;
         font-size: 40px;
         line-height: 44px;
 
-        max-width: 624px;
+        width: 680px;
 }  
     .to-order-text{
         max-width: 509px;
@@ -140,7 +171,7 @@ height: 476px;
             font-size: 40px;
             line-height: 44px;
     
-            max-width: 624px;
+            max-width: 680px;
         }
         .to-order-list {
             display: flex;
@@ -151,10 +182,12 @@ height: 476px;
         }
         .to-order-list-item {
             width: 389px;
-            height: 128px;
+            max-height: 128px;
 
             padding: 40px 20px;
+            margin: 0;
         }
+               
         .to-order-gif {
             width: 860px;
             height: 476px;

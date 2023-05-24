@@ -1,3 +1,7 @@
+body.modal-open {
+    overflow: hidden;
+}
+
 .backdrop {
     position: fixed;
     background-color: rgba(46, 47, 66, 0.4);
@@ -11,12 +15,11 @@
     transition: opacity 200ms ease, visibility 200ms ease;
 }
 
-
 .backdrop.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
-  }
+}
 
 .modal {
     position: absolute;
@@ -24,52 +27,86 @@
     border-radius: 20px;
     z-index: 100;
     padding: 20px;
-    background-color: #FFFFFF;
-    top: 70%;
+    background-color: var(--white);
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0) scale(1);
     scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 100vh;
 }
+
+@media only screen and (max-width: 374px) {
+    .modal {
+        padding: 10px;
+        width: 300px;
+    }
+}
+
 @media only screen and (min-width: 768px) {
-.modal  {
+.modal {
     width: 704px;
     padding: 40px;
     background-image: url(../img/modal-your-order-viktoriia/tablet/girl@1x.png);
     background-repeat: no-repeat;
     background-position: right bottom;
+    background-attachment: fixed;
   }
+    @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+.modal {
+    background-image: url(../img/modal-your-order-viktoriia/tablet/girl@2x.png);
+    background-size: auto 467px;
+   }
 }
+}
+
 @media only screen and (min-width: 1280px) {
-.modal   {
+
+.modal  {
     width: 891px;
     background-image: url(../img/modal-your-order-viktoriia/desktop/girl@1x.png);
   }
+   @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+.modal {
+    background-image: url(../img/modal-your-order-viktoriia/desktop/girl@2x.png);
+    background-size: 471px;
+    }
 }
+}
+
 .backdrop.is-hidden.modal {
     transform: translate(-50%, -50%) rotate(360deg) scale (0.2);
     opacity: 0;
 }
+
 .modal-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
 }
+
 .modal-uppertitle {
     font-weight: 500;
     font-size: 28px;
     line-height: 1;
     letter-spacing: -0.04em;
     text-transform: uppercase;
-    color: #AE1332;
+    color: var(--violet);
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
+
 @media only screen and (min-width: 768px) {
-.modal-uppertitle  {
-    font-size: 40px;
-    line-height: 1.1;
-  }
+    .modal-uppertitle {
+        font-size: 40px;
+        line-height: 1.1;
+    }
 }
- .modal-button {
+
+.modal-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,22 +116,23 @@
     width: 24px;
     height: 24px;
     border: none;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     padding: 0;
-    stroke: #AE1332;
+    stroke: var(--violet);
 }
+
 @media only screen and (min-width: 768px) {
-.modal-button  {
-    width: 28px;
-    height: 28px;
-    top: 20px;
-  }
+    .modal-button {
+        width: 28px;
+        height: 28px;
+        top: 20px;
+    }
 }
 
 .modal-button:hover,
 .modal-button:focus {
-    stroke: #FFFFFF;
-    background-color: #AE1332;
+    stroke: var(--light-grean);
+    
 }
 
 .modal-form {
@@ -105,24 +143,33 @@
 .modal-list {
     margin-bottom: 40px;
 }
- 
+
 @media only screen and (min-width: 768px) {
-.modal-list   {
-    display: flex;
-    gap: 12px;
-  }
+    .modal-list {
+        display: flex;
+        gap: 12px;
+    }
 }
+
 @media only screen and (min-width: 1280px) {
-.modal-list   {
-    gap: 20px;
-  }
+    .modal-list {
+        gap: 20px;
+    }
 }
+
 .modal-products {
     padding: 14px 14px 8px 20px;
     width: 295px;
-    height: 119px;
+    /* height: 119px; */
     border-radius: 20px;
     margin-bottom: 12px;
+}
+
+@media only screen and (max-width: 374px) {
+    .modal-products {
+        width: 280px;
+        padding-left: 5px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -130,69 +177,78 @@
     position: relative;
     padding: 14px;
     width: 200px;
-    height: 250px;
+    /* height: 250px; */
     border-radius: 20px;
     margin-bottom: 0;
   }
 }
+
 @media only screen and (min-width: 1280px) {
 .modal-products  {
     width: 257px;
-    height: 308px;
+    /* height: 308px; */
   }
 }
+
 .modal-strawberry {
     background: #F8766B;
 }
+
 .modal-apple {
     background: #EDD251;
 }
+
 .modal-fruits {
     background: #9DC262;
     margin-bottom: 0;
 }
 
 .modal-products-label {
+    position: relative;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+
 .modal-text-wrap {
     margin-right: auto;
-}   
+}
 
 @media only screen and (min-width: 768px) {
-.modal-text-wrap  {
-    margin-top: 40px;
-    margin-bottom: 4px;
-  }
+    .modal-text-wrap {
+        margin-top: 40px;
+        margin-bottom: 4px;
+    }
 }
+
 .modal-products-uppertitle {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.04em;
-    color: #FFFFFF;
+    color: var(--white);
 }
+
 @media only screen and (min-width: 768px) {
-.modal-products-uppertitle   {
-    margin-bottom: 2px;
-  }
+    .modal-products-uppertitle {
+        margin-bottom: 2px;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
-.modal-products-uppertitle  {
-    font-size: 24px;
-    line-height: 1.17;
-  }
+    .modal-products-uppertitle {
+        font-size: 24px;
+        line-height: 1.17;
+    }
 }
+
 .modal-products-undertitle {
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .modal-img {
@@ -201,80 +257,73 @@
 }
 
 @media only screen and (min-width: 768px) {
-.modal-image   {
-    bottom: 0;
-  }
+    .modal-image {
+        display: block;
+        bottom: 0;
+    }
 }
+
 .image-strawberry {
     width: 88px;
     height: 95px;
 }
+
 @media only screen and (min-width: 768px) {
-.image-strawberry  {
-    width: 133px;
-    height: 148px;
-  }
+    .image-strawberry {
+        width: 133px;
+        height: 148px;
+    }
 }
+
 @media only screen and (min-width: 1280px) {
     .image-strawberry {
         width: 173px;
         height: 196px;
     }
 }
+
 .image-apple {
     width: 106px;
     height: 95px;
 }
+
 @media only screen and (min-width: 768px) {
     .image-apple {
         width: 172px;
         height: 148px;
     }
 }
+
 @media only screen and (min-width: 1280px) {
     .image-apple {
         width: 229px;
         height: 196px;
     }
 }
+
 .image-fruits {
     width: 107px;
     height: 95px;
 }
+
 @media only screen and (min-width: 768px) {
     .image-fruits {
         width: 172px;
         height: 148px;
     }
 }
+
 @media only screen and (min-width: 1280px) {
     .image-fruits {
         width: 229px;
         height: 196px;
     }
 }
-.modal-img::after {
-    display: block;
-    border: 1.5px solid #FFFFFF;
-    border-radius: 4px;
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
-    content: " ";
-    flex-shrink: 0;
-}
 
-@media only screen and (min-width: 768px) {
-.modal-img::after   {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 14px;
-    right: 14px;
-  }
-}
+
 
 .visually-hiden {
+    display: none;
     position: absolute;
     width: 0px;
     height: 0px;
@@ -284,51 +333,93 @@
     border: 0;
 }
 
-.modal-form-checkbox:checked+.modal-img::after {
-    background-image: url(../img/icons.svg#icon-checbox);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #EDD251;
+.checkbox-span {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid var(--white);
+    border-radius: 4px;
+}
+  
+@media only screen and (min-width: 768px) {
+    .checkbox-span {
+        width: 20px;
+        height: 20px;
+    }
 }
 
-.modal-form-checkbox:focus+.modal-img::after {
-    outline: 2px solid red;
+.checkbox-svg {
+    width: 6px;
+    height: 6px;
+    opacity: 0;
 }
+
+@media only screen and (min-width: 768px) {
+    .checkbox-svg {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+.modal-form-checkbox:checked+.checkbox-span .checkbox-svg {
+    opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+.checkbox-svg   {
+    width: 8px;
+    height: 8px;
+  }
+}
+.modal-form-checkbox:checked + .checkbox-span .checkbox-svg {
+    opacity: 1;
+}
+
+
 
 .modal-form-names {
     margin-bottom: 14px;
 }
 
 @media only screen and (min-width: 768px) {
-.modal-form-names  {
-    width: 360px;
-  }
+    .modal-form-names {
+        width: 360px;
+    }
 }
+
+
 .modal-form-input {
     width: 100%;
     opacity: 0.3;
-    border: 1px solid #000000;
+    border: 1px solid var(--black);
     border-radius: 100px;
     height: 46px;
     padding-left: 24px;
 }
 
-.modal-form-input:focus {
-    outline: none;
-    border: 1px solid #9DC262;
+.modal-form-input:invalid {
+    border-color: transparent;
+    outline: red solid 2px;
 }
 
 .modal-form-comments {
+    display: block;
     width: 100%;
     height: 132px;
     opacity: 0.3;
-    border: 1px solid #000000;
+    border: 1px solid var(--black);
     border-radius: 20px;
     padding: 14px 24px;
     margin-bottom: 20px;
     resize: none;
     font-size: 14px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+    background-color: transparent;
 }
 
 @media only screen and (min-width: 768px) {
@@ -337,35 +428,34 @@
     height: 145px;
   }
 }
-.modal-form-comments:focus {
-    border: 1px solid #9DC262;
-    outline: none;
-}
-.modal-form-comments:invalid {
-    border: 1px solid red;
-    outline: none;
-}
+
+
 
 .modal-form-btn {
-    color: #FFFFFF;
+    color: var(--white);
     cursor: pointer;
     border: none;
     padding: 12px 24px;
     width: 92px;
-    height: 42px;
     background: #9DC162;
     border-radius: 100px;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) {
 .modal-form-btn  {
     padding: 15px 35px;
     width: 114px;
-    height: 48px;
+    
   }
 }
+
 .modal-form-btn:hover,
 .modal-form-btn:focus {
     background-color: #506432;
 }
 
+
+.modal-form-input:required:invalid~button.modal-form-btn {
+    pointer-events: none;
+    opacity: 65;
+}
