@@ -2,6 +2,20 @@
   padding-bottom: 80px;
 }
 
+/* Tablet  */
+@media only screen and (min-width: 768px) {
+  .section-container {
+    padding-bottom: 144px;
+  }
+}
+
+/* Decktop  */
+@media only screen and (min-width: 1280px) {
+  .section-container {
+    padding-bottom: 150px;
+  }
+}
+
 .organic-title {
   font-weight: 500;
   font-size: 28px;
@@ -366,16 +380,9 @@
 
     width: 114px;
     height: 114px;
-    margin-bottom: 144px;
   }
 }
 
-/* Decktop  */
-@media only screen and (min-width: 1280px) {
-  .button {
-    margin-bottom: 150px;
-  }
-}
 .svg-card {
   margin-right: 4px;
 }
