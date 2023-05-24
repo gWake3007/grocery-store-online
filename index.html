@@ -20,7 +20,7 @@
     />
     
     <script type="module" crossorigin src="/grocery-store-online/assets/index-2d23adbb.js"></script>
-    <link rel="stylesheet" href="/grocery-store-online/assets/index-52df90e2.css">
+    <link rel="stylesheet" href="/grocery-store-online/assets/index-b4eed6c8.css">
   </head>
   <body>
     <!-- 1.Header - Марія Сокол -->
@@ -320,149 +320,127 @@
 </section>
       <!-- MODAL Window(YOUR ORDER) - Вікторія -->
       <div class="backdrop" data-modal="modal-1">
-  <div class="modal">
-      <div class="modal-header">
-          <h2 class="modal-uppertitle">Your Order</h2>
-          <button
-              class="modal-button"
-              type="button"
-              data-modal-close>
-              <svg
-                  class="modal-icon"
-                  width="24"
-                  height="24">
-                  <use href="/grocery-store-online/assets/icons-9b9927db.svg#icon-x"></use>
-              </svg>
-          </button>
-      </div>
-      <form class="modal-form">
-          <ul class="modal-list">
-              <li class="modal-products modal-strawberry">
-                   <div class="modal-products-label">
-                    <div class="modal-text-wrap">
-                          <h3 class="modal-products-uppertitle">Strawberry Basket</h3>
-                          <p class="modal-products-undertitle">Plant</p>
-                      </div>
-                      <div class="modal-img">
-                       <label for="strawberry-check">
-                          <picture class="modal-image image-strawberry">
-                              <source media="(min-width: 1280px)" srcset="/grocery-store-online/assets/strawberry@1x-d59ea221.png 1x, /grocery-store-online/assets/strawberry@2x-af14b0bc.png 2x"
-                                  type="image/png">
-                              <source media="(min-width: 768px)" srcset="/grocery-store-online/assets/strawberry@1x-5c76070f.png 1x, /grocery-store-online/assets/strawberry@2x-072819b3.png 2x"
-                                  type="image/png">
-                              <source media="(max-width: 767px)" srcset="/grocery-store-online/assets/strawberry@1x-2142a0ca.png 1x, /grocery-store-online/assets/strawberry@2x-942d59be.png 2x"
-                                  type="image/png">
-                              <img src="/grocery-store-online/assets/strawberry@1x-2142a0ca.png" alt="Strawberry Basket"
-                                  loading="lazy">
-                          </picture>
-                          <input
-                      type="checkbox"
-                      id="strawberry-check"
-                      class="modal-form-checkbox visually-hiden"
-                      name="strawberry_basket"
-                      value="privacy_policy">
-                      </label>
-                      </div>
-                      </div>
-              </li>
-              <li class="modal-products modal-apple">
-                  <div class="modal-products-label">
-                      <div class="modal-text-wrap">
-                          <h3 class="modal-products-uppertitle">Apple Basket</h3>
-                          <p class="modal-products-undertitle">Plant</p>
-                      </div>
-                      <div class="modal-img">
-                          <label for="apple-check">
-                          <picture class="modal-image image-apple">
-                              <source media="(min-width: 1280px)"
-                                  srcset="/grocery-store-online/assets/box@1x-89936362.png 1x, /grocery-store-online/assets/box@2x-2a0df867.png 2x"
-                                  type="image/png">
-                              <source media="(min-width: 768px)"
-                                  srcset="/grocery-store-online/assets/box@1x-c2bed975.png 1x, /grocery-store-online/assets/box@2x-3dddbb60.png 2x"
-                                  type="image/png">
-                              <source media="(max-width: 767px)"
-                                  srcset="/grocery-store-online/assets/box@1x-6c6ebc58.png 1x, /grocery-store-online/assets/box@2x-56234650.png 2x"
-                                  type="image/png">
-                              <img src="/grocery-store-online/assets/box@1x-6c6ebc58.png" alt="Apple Basket"
-                                  loading="lazy">
-                          </picture>
-                          <input
-                          type="checkbox"
-                          id="apple-check"
-                          class="modal-form-checkbox visually-hiden"
-                          name="user_privacy"
-                          value="privacy_policy">
-                          </label>
-                      </div>
-                  </div>
-              </li>
-              <li class="modal-products modal-fruits">
-                  <div class="modal-products-label">
-                      <div class="modal-text-wrap">
-                          <h3 class="modal-products-uppertitle">Fruits Basket</h3>
-                          <p class="modal-products-undertitle">Plant</p>
-                      </div>
-                      <div class="modal-img">
-                          <label for="fruits-check" >
-                          <picture class="modal-image image-fruits">
-                              <source media="(min-width: 1280px)"
-                                  srcset="/grocery-store-online/assets/fruits@1x-bb44b4b7.png 1x, /grocery-store-online/assets/fruits@2x-70072131.png 2x"
-                                  type="image/png">
-                              <source media="(min-width: 768px)"
-                                  srcset="/grocery-store-online/assets/fruits@1x-b68f150d.png 1x, /grocery-store-online/assets/fruits@2x-3469958f.png 2x"
-                                  type="image/png">
-                              <source media="(max-width: 767px)"
-                                  srcset="/grocery-store-online/assets/fruits@1x-5e46fda4.png 1x, /grocery-store-online/assets/fruits@2x-046bceae.png 2x"
-                                  type="image/png">
-                              <img src="/grocery-store-online/assets/fruits@1x-5e46fda4.png" alt="Fruits Basket"
-                                  loading="lazy">
-                          </picture>
-                          <input
-                          type="checkbox"
-                          id="fruits-check"
-                          class="modal-form-checkbox visually-hiden"
-                          name="fruits_basket"
-                          value="fruits_basket">
-                          </label>
-                      </div>
-                  </div>
-              </li>
-          </ul>
-          <label class="modal-form-names">
-              <input
-                  type="text"
-                  class="modal-form-input"
-                  pattern="[A-Za-z]"
-                  placeholder="Enter full name..."
-                  name="user-name">
-          </label>
-          <label class="modal-form-names">
-              <input
-                  type="email"
-                  class="modal-form-input"
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                  placeholder="Enter email..."
-                  name="user-email">
-          </label>
-          <label class="modal-form-names">
-              <input
-                  type="text"
-                  class="modal-form-input"
-                  pattern="[0-9\s]{13,19}"
-                  placeholder="Enter card.."
-                  name="user_card">
-          </label>
-          <label>
-              <textarea
-                  name="user_comments"
-                  class="modal-form-comments"
-                  placeholder="Enter comments..."></textarea>
-          </label>
-          <button
-              type="submit"
-              class="modal-form-btn" data-modal-open="modal-2">Submit</button>
-      </form>
-</div>
+    <div class="modal">
+        <div class="modal-header">
+            <h2 class="modal-uppertitle">Your Order</h2>
+            <button class="modal-button" type="button" data-modal-close>
+                <svg class="modal-icon" width="24" height="24">
+                    <use href="/grocery-store-online/assets/icons-9b9927db.svg#icon-x"></use>
+                </svg>
+            </button>
+        </div>
+        <form class="modal-form">
+            <ul class="modal-list">
+                <li class="modal-products modal-strawberry">
+                    <label for="strawberry-check" class="modal-products-label">
+                        <span class="modal-text-wrap">
+                            <h3 class="modal-products-uppertitle">Strawberry Basket</h3>
+                            <p class="modal-products-undertitle">Plant</p>
+                        </span>
+                        <span class="modal-img">
+                            <picture class="modal-image image-strawberry">
+                                <source media="(min-width: 1280px)"
+                                    srcset="/grocery-store-online/assets/strawberry@1x-d59ea221.png 1x, /grocery-store-online/assets/strawberry@2x-af14b0bc.png 2x"
+                                    type="image/png">
+                                <source media="(min-width: 768px)"
+                                    srcset="/grocery-store-online/assets/strawberry@1x-5c76070f.png 1x, /grocery-store-online/assets/strawberry@2x-072819b3.png 2x"
+                                    type="image/png">
+                                <source media="(max-width: 767px)"
+                                    srcset="/grocery-store-online/assets/strawberry@1x-2142a0ca.png 1x, /grocery-store-online/assets/strawberry@2x-942d59be.png 2x"
+                                    type="image/png">
+                                <img src="/grocery-store-online/assets/strawberry@1x-2142a0ca.png"
+                                    alt="Strawberry Basket" loading="lazy">
+                            </picture>
+                            <input type="checkbox" id="strawberry-check" class="modal-form-checkbox visually-hiden"
+                                name="strawberry_basket" value="privacy_policy">
+                            <span class="checkbox-span">
+                                <svg class="checkbox-svg">
+                                    <use href="/grocery-store-online/assets/icons-9b9927db.svg#icon-checkbox"></use>
+                                </svg>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="modal-products modal-apple">
+                    <label for="apple-check" class="modal-products-label">
+                        <span class="modal-text-wrap">
+                            <h3 class="modal-products-uppertitle">Apple Basket</h3>
+                            <p class="modal-products-undertitle">Plant</p>
+                        </span>
+                        <span class="modal-img">
+                            <picture class="modal-image image-apple">
+                                <source media="(min-width: 1280px)"
+                                    srcset="/grocery-store-online/assets/box@1x-89936362.png 1x, /grocery-store-online/assets/box@2x-2a0df867.png 2x"
+                                    type="image/png">
+                                <source media="(min-width: 768px)"
+                                    srcset="/grocery-store-online/assets/box@1x-c2bed975.png 1x, /grocery-store-online/assets/box@2x-3dddbb60.png 2x"
+                                    type="image/png">
+                                <source media="(max-width: 767px)"
+                                    srcset="/grocery-store-online/assets/box@1x-6c6ebc58.png 1x, /grocery-store-online/assets/box@2x-56234650.png 2x"
+                                    type="image/png">
+                                <img src="/grocery-store-online/assets/box@1x-6c6ebc58.png" alt="Apple Basket"
+                                    loading="lazy">
+                            </picture>
+                            <input type="checkbox" id="apple-check" class="modal-form-checkbox visually-hiden"
+                                name="user_privacy" value="privacy_policy">
+                            <span class="checkbox-span">
+                                <svg class="checkbox-svg">
+                                    <use href="/grocery-store-online/assets/icons-9b9927db.svg#icon-checkbox"></use>
+                                </svg>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="modal-products modal-fruits">
+                    <label for="fruits-check" class="modal-products-label">
+                        <span class="modal-text-wrap">
+                            <h3 class="modal-products-uppertitle">Fruits Basket</h3>
+                            <p class="modal-products-undertitle">Plant</p>
+                        </span>
+                        <span class="modal-img">
+                            <picture class="modal-image image-fruits">
+                                <source media="(min-width: 1280px)"
+                                    srcset="/grocery-store-online/assets/fruits@1x-bb44b4b7.png 1x, /grocery-store-online/assets/fruits@2x-70072131.png 2x"
+                                    type="image/png">
+                                <source media="(min-width: 768px)"
+                                    srcset="/grocery-store-online/assets/fruits@1x-b68f150d.png 1x, /grocery-store-online/assets/fruits@2x-3469958f.png 2x"
+                                    type="image/png">
+                                <source media="(max-width: 767px)"
+                                    srcset="/grocery-store-online/assets/fruits@1x-5e46fda4.png 1x, /grocery-store-online/assets/fruits@2x-046bceae.png 2x"
+                                    type="image/png">
+                                <img src="/grocery-store-online/assets/fruits@1x-5e46fda4.png" alt="Fruits Basket"
+                                    loading="lazy">
+                            </picture>
+                            <input type="checkbox" id="fruits-check" class="modal-form-checkbox visually-hiden"
+                                name="fruits_basket" value="fruits_basket">
+                            <span class="checkbox-span">
+                                <svg class="checkbox-svg">
+                                    <use href="/grocery-store-online/assets/icons-9b9927db.svg#icon-checkbox"></use>
+                                </svg>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+            <label class="modal-form-names">
+                <input type="text" class="modal-form-input" pattern="[A-Za-z]" placeholder="Enter full name..."
+                    name="user-name">
+            </label>
+            <label class="modal-form-names">
+                <input type="email" class="modal-form-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    placeholder="Enter email..." name="user-email">
+            </label>
+            <label class="modal-form-names">
+                <input type="text" class="modal-form-input" pattern="[0-9\s]{13,19}" placeholder="Enter card.."
+                    name="user_card">
+            </label>
+            <label>
+                <textarea name="user_comments" class="modal-form-comments" placeholder="Enter comments..."></textarea>
+            </label>
+
+            <button type="submit" class="modal-form-btn" data-modal-open="modal-2">Submit</button>
+        </form>
+    </div>
 </div>
       <!-- Little MODAL Window (THANK YOU) and Mobile Menu - Катерина -->
       
