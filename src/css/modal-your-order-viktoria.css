@@ -1,6 +1,7 @@
 body.modal-open {
     overflow: hidden;
 }
+
 .backdrop {
     position: fixed;
     background-color: rgba(46, 47, 66, 0.4);
@@ -26,7 +27,7 @@ body.modal-open {
     border-radius: 20px;
     z-index: 100;
     padding: 20px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0) scale(1);
@@ -56,6 +57,7 @@ body.modal-open {
    (min-resolution: 2dppx) {
 .modal {
     background-image: url(../img/modal-your-order-viktoriia/tablet/girl@2x.png);
+    background-size: auto 467px;
    }
 }
 }
@@ -70,7 +72,8 @@ body.modal-open {
    (min-resolution: 192dpi),
    (min-resolution: 2dppx) {
 .modal {
-    background-image: url(../img/modal-your-order-viktoriia/tablet/girl@2x.png);
+    background-image: url(../img/modal-your-order-viktoriia/desktop/girl@2x.png);
+    background-size: 471px;
     }
 }
 }
@@ -92,7 +95,7 @@ body.modal-open {
     line-height: 1;
     letter-spacing: -0.04em;
     text-transform: uppercase;
-    color: #AE1332;
+    color: var(--violet);
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
@@ -113,9 +116,9 @@ body.modal-open {
     width: 24px;
     height: 24px;
     border: none;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     padding: 0;
-    stroke: #AE1332;
+    stroke: var(--violet);
 }
 
 @media only screen and (min-width: 768px) {
@@ -128,8 +131,8 @@ body.modal-open {
 
 .modal-button:hover,
 .modal-button:focus {
-    stroke: #FFFFFF;
-    background-color: #AE1332;
+    stroke: var(--light-grean);
+    
 }
 
 .modal-form {
@@ -225,7 +228,7 @@ body.modal-open {
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.04em;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 @media only screen and (min-width: 768px) {
@@ -245,7 +248,7 @@ body.modal-open {
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .modal-img {
@@ -338,7 +341,7 @@ body.modal-open {
     right: 0;
     width: 16px;
     height: 16px;
-    border: 1.5px solid #FFFFFF;
+    border: 1.5px solid var(--white);
     border-radius: 4px;
 }
   
@@ -391,7 +394,7 @@ body.modal-open {
 .modal-form-input {
     width: 100%;
     opacity: 0.3;
-    border: 1px solid #000000;
+    border: 1px solid var(--black);
     border-radius: 100px;
     height: 46px;
     padding-left: 24px;
@@ -407,7 +410,7 @@ body.modal-open {
     width: 100%;
     height: 132px;
     opacity: 0.3;
-    border: 1px solid #000000;
+    border: 1px solid var(--black);
     border-radius: 20px;
     padding: 14px 24px;
     margin-bottom: 20px;
@@ -428,7 +431,7 @@ body.modal-open {
 
 
 .modal-form-btn {
-    color: #FFFFFF;
+    color: var(--white);
     cursor: pointer;
     border: none;
     padding: 12px 24px;
