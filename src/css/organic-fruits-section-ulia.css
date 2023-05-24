@@ -327,12 +327,18 @@
     padding: 15px 42px;
   }
   .link-bananad {
-    bottom: 16px;
+    bottom: 14px;
+  }
+  .link-watermelon {
+    bottom: 7px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .link-watermelon {
-    bottom: 19px;
+    bottom: 5px;
+  }
+  .link-bananad {
+    bottom: 14px;
   }
 }
 
