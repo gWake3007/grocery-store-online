@@ -1,4 +1,23 @@
 
+@keyframes shake {
+  1%,
+  9% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  2%,
+  8% {
+    transform: translate3d(1px, 0, 0);
+  }
+  3%,
+  5%,
+  7% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  4%,
+  6% {
+    transform: translate3d(2px, 0, 0);
+  }
+}
 
 .hero-section > .container {
   
@@ -333,7 +352,7 @@
 .hero-btn {
   position: absolute;
   top: 458px;
-  left: 50%;
+  left: 37%;
   transform: translateX(-50%);
 
   display: flex;
@@ -354,12 +373,18 @@
 
   color: var(--violet);
   background-color: var(--white);
+
+  animation: shake 8s cubic-bezier(.36, .07, .19, .97) both infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
 @media only screen and (min-width: 375px) {
   .hero-btn {
-    position: absolute;
+   
     top: 456px;
+    left: 39%;
   }
 }
 
@@ -632,6 +657,12 @@
   padding-bottom: 12px;
 
   text-align: center;
+}
+
+.hero-list-link:hover,
+.hero-list-link:focus {
+
+  box-shadow: ;
 }
 
 .hero-list-title {
