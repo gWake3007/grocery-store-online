@@ -317,7 +317,7 @@
 
   overflow: hidden;
 
-  background-image: url(../img/hero/redhair_girl_m@1x.jpg);
+  background-image: url(../img/hero/redhair_girl_m@1x.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -327,7 +327,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-main-image {
-    background-image: url(../img/hero/redhair_girl_m@2x.jpg);
+    background-image: url(../img/hero/redhair_girl_m@2x.webp);
   }
 }
 
@@ -335,7 +335,7 @@
   .hero-main-image {
     max-width: 452px;
     height: 708px;
-    background-image: url(../img/hero/redhair_girl@1x.jpg);
+    background-image: url(../img/hero/redhair_girl@1x.webp);
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -343,7 +343,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero-main-image {
-      background-image: url(../img/hero/redhair_girl@2x.jpg);
+      background-image: url(../img/hero/redhair_girl@2x.webp);
     }
   }
 }
