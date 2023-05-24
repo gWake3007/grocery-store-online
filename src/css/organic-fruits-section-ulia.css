@@ -236,6 +236,7 @@
 }
 
 .card {
+  cursor: pointer;
   padding: 64px 24px 24px 20px;
 
   border-radius: 20px;
@@ -277,6 +278,7 @@
 }
 
 .name-text {
+  margin-bottom: 4px;
   letter-spacing: -0.02em;
 
   color: var(--white);
