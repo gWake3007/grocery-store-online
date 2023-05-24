@@ -28,15 +28,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 16px auto 0;
+    width: 24px;
 
-    margin-top: 16px;
+
     padding: 0;
     background-color: transparent;
     border: 1px solid transparent;
     border-radius: 10px;
     outline: none;
-    transition: border,
-    background-color var(--cubic);
+    transition: border var(--cubic), background-color var(--cubic);
 }
 
 .mobile-basket-button:hover,
@@ -76,4 +77,9 @@
   .mobile-menu-icon:hover{
     fill: var(--light-grean); 
     transition: var(--cubic);
+  }
+  @media only screen and (min-width: 768px){
+    .menu-container{
+      display: none;
+    }
   }

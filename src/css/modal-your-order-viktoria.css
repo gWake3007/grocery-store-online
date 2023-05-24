@@ -1,6 +1,6 @@
-body.modal-open {
+/* body.modal-open {
     overflow: hidden;
-}
+} */
 
 .backdrop {
     position: fixed;
@@ -401,10 +401,6 @@ body.modal-open {
     padding-left: 24px;
 }
 
-.modal-form-input:invalid {
-    border-color: transparent;
-    outline: red solid 2px;
-}
 
 .modal-form-comments {
     display: block;
