@@ -152,6 +152,11 @@
   outline: red solid 2px;
 }
 
+.contacts-form-input:invalid ~ .feedback-send-btn {
+  opacity: 0.65;
+  pointer-events: none;
+}
+
 .feedback-send-btn {
   position: absolute;
   top: 0;
