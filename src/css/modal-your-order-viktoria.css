@@ -1,3 +1,6 @@
+body.modal-open {
+    overflow: hidden;
+}
 .backdrop {
     position: fixed;
     background-color: rgba(46, 47, 66, 0.4);
@@ -10,7 +13,6 @@
     z-index: 100;
     transition: opacity 200ms ease, visibility 200ms ease;
 }
-
 
 .backdrop.is-open {
     opacity: 1;
@@ -55,6 +57,7 @@
 .modal {
     background-image: url(../img/modal-your-order-viktoriia/tablet/girl@2x.png);
    }
+}
 }
 
 @media only screen and (min-width: 1280px) {
@@ -445,4 +448,10 @@
 .modal-form-btn:hover,
 .modal-form-btn:focus {
     background-color: #506432;
+}
+
+
+.modal-form-input:required:invalid~button.modal-form-btn {
+    pointer-events: none;
+    opacity: 65;
 }

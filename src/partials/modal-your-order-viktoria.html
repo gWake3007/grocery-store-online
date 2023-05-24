@@ -8,7 +8,7 @@
                 </svg>
             </button>
         </div>
-        <form class="modal-form">
+        <form class="modal-form" id="myForm">
             <ul class="modal-list">
                 <li class="modal-products modal-strawberry">
                     <label for="strawberry-check" class="modal-products-label">
@@ -103,18 +103,18 @@
             </ul>
             <label class="modal-form-names">
                 <input type="text" class="modal-form-input" pattern="[A-Za-z]" placeholder="Enter full name..."
-                    name="user-name">
+                    name="user-name" required>
             </label>
             <label class="modal-form-names">
                 <input type="email" class="modal-form-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                    placeholder="Enter email..." name="user-email">
+                    placeholder="Enter email..." name="user-email" required>
             </label>
             <label class="modal-form-names">
                 <input type="text" class="modal-form-input" pattern="[0-9\s]{13,19}" placeholder="Enter card.."
-                    name="user_card">
+                    name="user_card" required>
             </label>
             <label>
-                <textarea name="user_comments" class="modal-form-comments" placeholder="Enter comments..."></textarea>
+                <textarea name="user_comments" class="modal-form-comments" placeholder="Enter comments..." required></textarea>
             </label>
 
             <button type="submit" class="modal-form-btn" data-modal-open="modal-2">Submit</button>
