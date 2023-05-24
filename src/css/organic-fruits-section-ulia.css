@@ -222,7 +222,7 @@
 }
 
 .card {
-  padding: 64px 20px 24px 20px;
+  padding: 64px 24px 24px 20px;
 
   border-radius: 20px;
 }
@@ -309,6 +309,14 @@
     line-height: 1.3;
 
     padding: 15px 42px;
+  }
+  .link-bananad {
+    bottom: 16px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .link-watermelon {
+    bottom: 19px;
   }
 }
 
