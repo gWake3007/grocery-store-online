@@ -69,7 +69,9 @@
   .mobile-menu-icon{
     fill: var(--white);
   }
-
+.mobile-menu-btn{
+  display: none;
+}
   .mobile-menu-icon:focus,
   .mobile-menu-icon:hover{
     fill: var(--light-grean); 
