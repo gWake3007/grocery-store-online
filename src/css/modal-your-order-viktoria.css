@@ -41,37 +41,35 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .modal {
-        width: 704px;
-        padding: 40px;
-        background-image: url(../img/modal-your-order-viktoriia/tablet/girl@1x.png);
-        background-repeat: no-repeat;
-        background-position: right bottom;
-        background-attachment: fixed;
-    }
-
+.modal {
+    width: 704px;
+    padding: 40px;
+    background-image: url(../img/modal-your-order-viktoriia/tablet/girl@1x.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-attachment: fixed;
+  }
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .modal {
-            background-image: url(../img/modal-your-order-viktoriia/tablet/girl@2x.png);
-        }
-    }
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+.modal {
+    background-image: url(../img/modal-your-order-viktoriia/tablet/girl@2x.png);
+   }
 }
 
 @media only screen and (min-width: 1280px) {
-    .modal {
-        width: 891px;
-        background-image: url(../img/modal-your-order-viktoriia/desktop/girl@1x.png);
-    }
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .modal {
-            background-image: url(../img/modal-your-order-viktoriia/tablet/girl@2x.png);
-        }
+.modal  {
+    width: 891px;
+    background-image: url(../img/modal-your-order-viktoriia/desktop/girl@1x.png);
+  }
+   @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+   (min-resolution: 2dppx) {
+.modal {
+    background-image: url(../img/modal-your-order-viktoriia/tablet/girl@2x.png);
     }
+}
 }
 
 .backdrop.is-hidden.modal {
@@ -169,21 +167,21 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .modal-products {
-        position: relative;
-        padding: 14px;
-        width: 200px;
-        /* height: 250px; */
-        border-radius: 20px;
-        margin-bottom: 0;
-    }
+.modal-products   {
+    position: relative;
+    padding: 14px;
+    width: 200px;
+    /* height: 250px; */
+    border-radius: 20px;
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
-    .modal-products {
-        width: 257px;
-        /* height: 308px; */
-    }
+.modal-products  {
+    width: 257px;
+    /* height: 308px; */
+  }
 }
 
 .modal-strawberry {
@@ -340,7 +338,7 @@
     border: 1.5px solid #FFFFFF;
     border-radius: 4px;
 }
-
+  
 @media only screen and (min-width: 768px) {
     .checkbox-span {
         width: 20px;
@@ -364,6 +362,16 @@
 .modal-form-checkbox:checked+.checkbox-span .checkbox-svg {
     opacity: 1;
 }
+@media only screen and (min-width: 768px) {
+.checkbox-svg   {
+    width: 8px;
+    height: 8px;
+  }
+}
+.modal-form-checkbox:checked + .checkbox-span .checkbox-svg {
+    opacity: 1;
+}
+
 
 
 .modal-form-names {
@@ -408,11 +416,12 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .modal-form-comments {
-        width: 360px;
-        height: 145px;
-    }
+.modal-form-comments  {
+    width: 360px;
+    height: 145px;
+  }
 }
+
 
 
 .modal-form-btn {
@@ -426,11 +435,11 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .modal-form-btn {
-        padding: 15px 35px;
-        width: 114px;
-
-    }
+.modal-form-btn  {
+    padding: 15px 35px;
+    width: 114px;
+    
+  }
 }
 
 .modal-form-btn:hover,
