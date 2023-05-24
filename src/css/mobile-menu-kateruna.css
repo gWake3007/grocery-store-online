@@ -24,34 +24,33 @@
       
   }
   
-  .mobile-menu-btn {
-    position: absolute;
-    top: 24px;
-    right: 15px;
-  
+  .basket-button {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 24px;
-    height: 24px;
-  
-    background-color: var(--violet);
-    border: 1px solid rgba(0, 0, 0, 0);
-  
-    cursor: pointer;
-  
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  
+    justify-content: center;
+
+    margin-top: 16px;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    outline: none;
+    transition: border,
+    background-color var(--cubic);
+}
+
+.basket-button:hover,
+.basket-button:focus {
+    border: 1px solid var(--light-grean);
+    background-color: rgba(174, 19, 50, 0.1);
+}
   
   .mobile-menu-link {
     display: block;
     font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
     letter-spacing: 0.02em;
     color: var(--white);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,7 +63,7 @@
   }
   
   .mobile-menu-item:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 16px;
   }
 
   .mobile-menu-icon{
